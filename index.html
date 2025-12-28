@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozone Service Solutions | Bengaluru's Trusted Document & Business Services Since 2006</title>
+    <meta name="description" content="Professional document assistance, company registration, GST filing, passport services, financial and travel assistance in Bengaluru. Trusted since 2006.">
+    <meta name="keywords" content="document assistance Bengaluru, company registration Bangalore, GST filing, passport services, financial assistance, travel booking, Jayanagar services">
+    <meta name="author" content="Ozone Service Solutions">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="pages/services/document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="pages/services/financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="pages/services/travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="pages/services/company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="pages/services/doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="pages/services/gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="pages/services/passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                        </div>
+                    </div>
+                    <a href="pages/about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="pages/how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="pages/why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="pages/testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="pages/contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="particles" id="particles-js"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-medal"></i> Trusted Since 2006</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Simplifying Your <span class="highlight">Documentation</span> Journey
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Professional, quick, and confidential document assistance in Bengaluru. Your trusted one-stop solution for all documentation, financial, and travel needs since 2006.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="18">0</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Documents Processed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">% Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">Hour Support</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hello%20Ozone%20Service%20Solutions!%20I%20need%20help%20with%3A" 
+                       class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Consultation
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call Now: +91 98866 93316
+                    </a>
+                    <a href="pages/services/" class="btn btn-outline btn-large">
+                        <i class="fas fa-eye"></i> View All Services
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-3d">
+                <div class="scene-container" id="heroScene"></div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Complete Document & Business Solutions</h2>
+                <p class="section-subtitle">Professional assistance for all your documentation needs in one place</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Document Assistance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-passport"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Document Assistance</h3>
+                    <p>Complete documentation help with accuracy, speed, privacy, and reliability for all personal documents.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Passport Services</li>
+                        <li><i class="fas fa-check"></i> ID Cards & Certificates</li>
+                        <li><i class="fas fa-check"></i> Affidavits & Notarization</li>
+                    </ul>
+                    <a href="pages/services/document-assistance.html" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Financial Assistance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Financial Assistance</h3>
+                    <p>Trusted financial solutions for banking, insurance, payments, and secure financial services.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Banking Services</li>
+                        <li><i class="fas fa-check"></i> Insurance Processing</li>
+                        <li><i class="fas fa-check"></i> Loan Documentation</li>
+                    </ul>
+                    <a href="pages/services/financial-assistance.html" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Travel Assistance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Travel Assistance</h3>
+                    <p>Seamless travel support with bookings, guidance, and reliable service for hassle-free journeys.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Travel Bookings</li>
+                        <li><i class="fas fa-check"></i> Visa Applications</li>
+                        <li><i class="fas fa-check"></i> Hotel Reservations</li>
+                    </ul>
+                    <a href="pages/services/travel-assistance.html" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Company Registration -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Company Registration</h3>
+                    <p>Quick and reliable company registration services with complete legal compliance and expert guidance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> MSME Registration</li>
+                        <li><i class="fas fa-check"></i> LLP Formation</li>
+                        <li><i class="fas fa-check"></i> Private Limited</li>
+                    </ul>
+                    <a href="pages/services/company-registration.html" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Doctors Assistance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Assistance to Doctors</h3>
+                    <p>Specialized support for doctors with documentation, licensing, registrations, and professional services.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Medical Council Registration</li>
+                        <li><i class="fas fa-check"></i> Clinic/Hospital Licenses</li>
+                        <li><i class="fas fa-check"></i> KPME License</li>
+                    </ul>
+                    <a href="pages/services/doctors-assistance.html" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- GST & Tax Filing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>GST & Tax Filing</h3>
+                    <p>Professional GST registration, filing, returns, Income Tax filing, and all financial compliance services.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> GST Registration</li>
+                        <li><i class="fas fa-check"></i> Tax Filing</li>
+                        <li><i class="fas fa-check"></i> Financial Compliance</li>
+                    </ul>
+                    <a href="pages/services/gst-tax-filing.html" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-60">
+                <a href="pages/services/" class="btn btn-primary btn-large">
+                    <i class="fas fa-th-list"></i> View All 12 Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Process</span>
+                <h2 class="section-title">Simple & Transparent Process</h2>
+                <p class="section-subtitle">Four easy steps to get your documents processed professionally</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>Contact us via phone, WhatsApp, or visit our office. We understand your requirements thoroughly.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <h3>Document Collection</h3>
+                    <p>We guide you on required documents and collect them securely from your location if needed.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Processing</h3>
+                    <p>Our experts handle all paperwork and government liaison with regular status updates.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Delivery</h3>
+                    <p>Receive completed work with proper documentation and ongoing support if needed.</p>
+                </div>
+            </div>
+            
+            <div class="process-cta">
+                <div class="cta-content">
+                    <h3>Ready to Start?</h3>
+                    <p>Contact us today for a free consultation about your document requirements.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="tel:+919886693316" class="btn btn-primary">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                    <a href="pages/contact.html" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">Trusted by Bengaluru Since 2006</h2>
+                <p class="section-subtitle">Experience, reliability, and professionalism you can count on</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>18+ Years Experience</h3>
+                    <p>Since 2006, we've been serving Bengaluru with professional document assistance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>100% Confidential</h3>
+                    <p>Your documents and information are handled with utmost security and privacy.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Quick Processing</h3>
+                    <p>Fast, efficient service that saves you time and reduces government office visits.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-rupee-sign"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Clear upfront pricing with no hidden charges. Pay only for what you need.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Experienced professionals specialized in different government and legal processes.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <div class="icon-front">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="icon-back">
+                                <i class="fas fa-store"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Local Jayanagar Office</h3>
+                    <p>Physical office in Jayanagar 3rd Block for in-person consultation and document submission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Trusted by individuals and businesses across Bengaluru</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Ozone Service Solutions provided excellent document assistance for my passport renewal. Quick, professional, and completely hassle-free!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>RK</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <span>Business Owner, JP Nagar</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Their financial assistance services saved me hours of bank visits. Everything was handled efficiently with regular updates. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>PM</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya Menon</h4>
+                            <span>Doctor, Jayanagar</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"As a startup founder, their company registration service was a lifesaver. They handled everything from documentation to compliance seamlessly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>AS</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Arun Sharma</h4>
+                            <span>Startup Founder, Whitefield</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-60">
+                <a href="pages/testimonials.html" class="btn btn-outline">
+                    <i class="fas fa-comments"></i> Read More Testimonials
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta section-padding">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Need Professional Document Assistance?</h2>
+                    <p>Contact us today for a free consultation. We're here to help with all your documentation needs in Bengaluru.</p>
+                    
+                    <div class="contact-info-grid">
+                        <div class="contact-info">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 98866 93316</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>ozoneservicesolutions@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>Jayanagar 3rd Block, Bengaluru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-form">
+                    <h3>Quick Inquiry</h3>
+                    <form id="quickInquiryForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option>Document Assistance</option>
+                                <option>Company Registration</option>
+                                <option>GST & Tax Filing</option>
+                                <option>Passport & Visa</option>
+                                <option>Financial Assistance</option>
+                                <option>Travel Assistance</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Professional and personal document assistance with quick, efficient, and confidential services in Bengaluru.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="pages/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="pages/how-it-works.html"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="pages/why-choose-us.html"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="pages/testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="pages/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/services/document-assistance.html"><i class="fas fa-chevron-right"></i> Document Assistance</a></li>
+                        <li><a href="pages/services/financial-assistance.html"><i class="fas fa-chevron-right"></i> Financial Assistance</a></li>
+                        <li><a href="pages/services/travel-assistance.html"><i class="fas fa-chevron-right"></i> Travel Assistance</a></li>
+                        <li><a href="pages/services/company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                        <li><a href="pages/services/doctors-assistance.html"><i class="fas fa-chevron-right"></i> Assistance to Doctors</a></li>
+                        <li><a href="pages/services/gst-tax-filing.html"><i class="fas fa-chevron-right"></i> GST & Tax Filing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM<br>Sun: 10:00 AM - 2:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-2023 Ozone Service Solutions. All Rights Reserved. | Serving Bengaluru Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="pages/privacy-policy.html">Privacy Policy</a>
+                    <a href="pages/terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hello%20Ozone%20Service%20Solutions!%20I%20need%20help%20with%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Chat with us</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="three-models.js"></script>
+    <script src="assets/js/scroll-effects.js"></script>
+    <script src="assets/js/counter-animation.js"></script>
+    <script src="assets/js/form-validator.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Ozone Service Solutions",
+        "image": "https://ozoneservice.co.in/assets/images/logo/logo.png",
+        "description": "Professional document assistance, financial services, travel assistance, and company registration in Bengaluru since 2006.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No 806, 8th Main Road, Jayanagar 3rd Block",
+            "addressLocality": "Bengaluru",
+            "postalCode": "560011",
+            "addressRegion": "Karnataka",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "12.9250",
+            "longitude": "77.5931"
+        },
+        "url": "https://ozoneservice.co.in",
+        "telephone": "+919886693316",
+        "email": "ozoneservicesolutions@gmail.com",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "09:30",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "14:00"
+            }
+        ],
+        "priceRange": "₹₹",
+        "areaServed": {
+            "@type": "City",
+            "name": "Bengaluru"
+        },
+        "foundingDate": "2006",
+        "founder": {
+            "@type": "Person",
+            "name": "Ozone Service Solutions Team"
+        },
+        "serviceType": [
+            "Document Assistance",
+            "Financial Assistance",
+            "Travel Assistance",
+            "Company Registration",
+            "Medical License Assistance",
+            "GST Filing",
+            "Passport Services"
+        ]
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Testimonials | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="Read what our satisfied customers say about Ozone Service Solutions. Real testimonials from happy clients since 2006 in Bengaluru.">
+    <meta name="keywords" content="Ozone Service testimonials, customer reviews Bangalore, service feedback, document assistance reviews, financial service testimonials">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services/document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="services/financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="services/travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="services/company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="services/doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="services/gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="services/passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="services/medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="services/aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="services/attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                            <a href="services/recharge-utility.html"><i class="fas fa-bolt"></i> Recharge & Utility</a>
+                        </div>
+                    </div>
+                    <a href="how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="testimonials.html" class="active"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-comments"></i> Real Feedback</span>
+                </div>
+                <h1 class="hero-title">
+                    What Our <span class="highlight">Clients Say</span> About Us
+                </h1>
+                <p class="hero-subtitle">
+                    Read real testimonials from our satisfied customers. Their success stories and positive experiences reflect our commitment to excellence since 2006.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Would Recommend</div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#submit-testimonial" class="btn btn-primary btn-large">
+                        <i class="fas fa-edit"></i> Share Your Experience
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-headset"></i> Get Similar Service
+                    </a>
+                </div>
+            </div>
+            <!-- 3D Testimonials Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="testimonials-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Filter -->
+    <section class="section testimonials-filter">
+        <div class="container">
+            <div class="filter-header">
+                <h2>Browse Testimonials by Service</h2>
+                <p>Filter reviews by the type of service received</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="document">Document Assistance</button>
+                <button class="filter-btn" data-filter="financial">Financial Services</button>
+                <button class="filter-btn" data-filter="travel">Travel Assistance</button>
+                <button class="filter-btn" data-filter="business">Business Services</button>
+                <button class="filter-btn" data-filter="medical">Medical Services</button>
+            </div>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="testimonialSearch" placeholder="Search testimonials by keyword...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="section testimonials-grid-section">
+        <div class="container">
+            <div class="testimonials-container">
+                <!-- Testimonial 1 - Document Assistance -->
+                <div class="testimonial-card" data-category="document" data-rating="5">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="client-details">
+                                <h3>Ramesh Kumar</h3>
+                                <div class="client-service">
+                                    <i class="fas fa-passport"></i> Passport Renewal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"I needed my passport renewed urgently for a business trip. Ozone Service Solutions handled everything professionally. They collected documents from my office, submitted the application, and got it done in just 3 days. Saved me hours of waiting and paperwork!"</p>
+                    </div>
+                    
+                    <div class="testimonial-footer">
+                        <div class="service-date">
+                            <i class="fas fa-calendar"></i> March 15, 2024
+                        </div>
+                        <div class="service-location">
+                            <i class="fas fa-map-marker-alt"></i> Jayanagar, Bengaluru
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 - Financial Services -->
+                <div class="testimonial-card" data-category="financial" data-rating="5">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="client-details">
+                                <h3>Priya Sharma</h3>
+                                <div class="client-service">
+                                    <i class="fas fa-home"></i> Home Loan Processing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"Getting a home loan in Bangalore can be overwhelming, but Ozone made it so easy. They compared multiple banks, got me the best interest rate, and handled all documentation. The loan was sanctioned in 10 days flat. Highly recommended for financial services!"</p>
+                    </div>
+                    
+                    <div class="testimonial-footer">
+                        <div class="service-date">
+                            <i class="fas fa-calendar"></i> February 28, 2024
+                        </div>
+                        <div class="service-location">
+                            <i class="fas fa-map-marker-alt"></i> Whitefield, Bengaluru
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 - Travel Assistance -->
+                <div class="testimonial-card" data-category="travel" data-rating="4">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="client-details">
+                                <h3>Dr. Anjali Rao</h3>
+                                <div class="client-service">
+                                    <i class="fas fa-plane"></i> USA Visa Processing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.0/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"As a medical professional attending an international conference, I needed a US visa quickly. Ozone helped with all documentation, appointment booking, and interview preparation. The visa was approved on first attempt. Very professional service!"</p>
+                    </div>
+                    
+                    <div class="testimonial-footer">
+                        <div class="service-date">
+                            <i class="fas fa-calendar"></i> January 20, 2024
+                        </div>
+                        <div class="service-location">
+                            <i class="fas fa-map-marker-alt"></i> Indiranagar, Bengaluru
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 - Business Services -->
+                <div class="testimonial-card" data-category="business" data-rating="5">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="client-details">
+                                <h3>Arun Mehra</h3>
+                                <div class="client-service">
+                                    <i class="fas fa-building"></i> Company Registration
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"Starting a new business involves complex legalities. Ozone handled my Private Limited company registration, GST, trade license, and bank account opening. Their team was knowledgeable and completed everything in 15 days. Perfect for entrepreneurs!"</p>
+                    </div>
+                    
+                    <div class="testimonial-footer">
+                        <div class="service-date">
+                            <i class="fas fa-calendar"></i> December 5, 2023
+                        </div>
+                        <div class="service-location">
+                            <i class="fas fa-map-marker-alt"></i> Koramangala, Bengaluru
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 - Medical Services -->
+                <div class="testimonial-card" data-category="medical" data-rating="5">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="client-details">
+                                <h3>Dr. Vikram Singh</h3>
+                                <div class="client-service">
+                                    <i class="fas fa-stethoscope"></i> Medical License Renewal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"Renewing medical licenses used to take weeks of running between offices. Ozone Service Solutions handled my Karnataka Medical Council license renewal and all other registrations. They saved me valuable clinic time. Excellent service for healthcare professionals."</p>
+                    </div>
+                    
+                    <div class="testimonial-footer">
+                        <div class="service-date">
+                            <i class="fas fa-calendar"></i> November 18, 2023
+                        </div>
+                        <div class="service-location">
+                            <i class="fas fa-map-marker-alt"></i> Malleshwaram, Bengaluru
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 - Document Assistance -->
+                <div class="testimonial-card" data-category="document" data-rating="5">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="client-details">
+                                <h3>Meena Patel</h3>
+                                <div class="client-service">
+                                    <i class="fas fa-id-card"></i> Aadhaar & PAN Services
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"After marriage, I needed to update my name on all documents. Ozone helped with Aadhaar, PAN, passport, and bank records. They handled everything systematically. What would have taken me months was done in weeks. Very reliable service!"</p>
+                    </div>
+                    
+                    <div class="testimonial-footer">
+                        <div class="service-date">
+                            <i class="fas fa-calendar"></i> October 30, 2023
+                        </div>
+                        <div class="service-location">
+                            <i class="fas fa-map-marker-alt"></i> JP Nagar, Bengaluru
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 7 - Financial Services -->
+                <div class="testimonial-card" data-category="financial" data-rating="4">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="client-details">
+                                <h3>Suresh Reddy</h3>
+                                <div class="client-service">
+                                    <i class="fas fa-file-invoice-dollar"></i> GST Registration & Filing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.0/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"As a small business owner, GST compliance was confusing. Ozone helped with registration, monthly filings, and annual returns. They even reminded me of deadlines. Their expertise saved me from penalties. Good value for money!"</p>
+                    </div>
+                    
+                    <div class="testimonial-footer">
+                        <div class="service-date">
+                            <i class="fas fa-calendar"></i> September 12, 2023
+                        </div>
+                        <div class="service-location">
+                            <i class="fas fa-map-marker-alt"></i> HSR Layout, Bengaluru
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 8 - Travel Assistance -->
+                <div class="testimonial-card" data-category="travel" data-rating="5">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="client-details">
+                                <h3>Nikhil Verma</h3>
+                                <div class="client-service">
+                                    <i class="fas fa-globe"></i> Canada Study Visa
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"Applying for a Canada study visa seemed daunting with all the documentation. Ozone guided me step by step - from SOP writing to financial proof arrangement. My visa was approved without any issues. Perfect for students going abroad!"</p>
+                    </div>
+                    
+                    <div class="testimonial-footer">
+                        <div class="service-date">
+                            <i class="fas fa-calendar"></i> August 25, 2023
+                        </div>
+                        <div class="service-location">
+                            <i class="fas fa-map-marker-alt"></i> BTM Layout, Bengaluru
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <span class="pagination-dots">...</span>
+                <button class="pagination-btn">10</button>
+                <button class="pagination-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials -->
+    <section class="section video-testimonials bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-video"></i> Video Testimonials</h2>
+                <p>Hear directly from our satisfied clients</p>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Customer testimonial">
+                    </div>
+                    <div class="video-info">
+                        <h3>"Best Service in Bangalore"</h3>
+                        <p>Mr. Rajesh talks about his experience with passport renewal services</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2:30 mins</span>
+                            <span><i class="fas fa-calendar"></i> March 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Customer testimonial">
+                    </div>
+                    <div class="video-info">
+                        <h3>"Home Loan Made Easy"</h3>
+                        <p>Priya shares how Ozone helped her get the best home loan deal</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 3:15 mins</span>
+                            <span><i class="fas fa-calendar"></i> Feb 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Customer testimonial">
+                    </div>
+                    <div class="video-info">
+                        <h3>"Company Registration in 15 Days"</h3>
+                        <p>Entrepreneur Arun Mehra discusses his business setup experience</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 4:10 mins</span>
+                            <span><i class="fas fa-calendar"></i> Dec 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Testimonial -->
+    <section class="section submit-testimonial" id="submit-testimonial">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-edit"></i> Share Your Experience</h2>
+                <p>Help others by sharing your service journey with us</p>
+            </div>
+            
+            <div class="testimonial-form-container">
+                <div class="form-intro">
+                    <h3>We Value Your Feedback</h3>
+                    <p>Your testimonial helps us improve and helps future customers make informed decisions. Share your honest experience with our services.</p>
+                    <div class="form-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Your privacy protected</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Review published in 24 hours</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-gift"></i>
+                            <span>Special offers for reviewers</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="testimonial-form" id="testimonialForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientName"><i class="fas fa-user"></i> Your Name *</label>
+                            <input type="text" id="clientName" name="clientName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                            <input type="email" id="clientEmail" name="clientEmail" placeholder="Enter your email (optional)">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientPhone"><i class="fas fa-phone"></i> Phone Number *</label>
+                            <input type="tel" id="clientPhone" name="clientPhone" placeholder="Enter your 10-digit mobile number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceType"><i class="fas fa-briefcase"></i> Service Used *</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select a service</option>
+                                <option value="document">Document Assistance</option>
+                                <option value="financial">Financial Services</option>
+                                <option value="travel">Travel Assistance</option>
+                                <option value="company">Company Registration</option>
+                                <option value="medical">Medical Services</option>
+                                <option value="other">Other Services</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="testimonialTitle"><i class="fas fa-heading"></i> Testimonial Title *</label>
+                        <input type="text" id="testimonialTitle" name="testimonialTitle" placeholder="e.g., Excellent Passport Service" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-star"></i> Your Rating *</label>
+                        <div class="rating-input">
+                            <div class="stars-selector">
+                                <i class="far fa-star" data-rating="1"></i>
+                                <i class="far fa-star" data-rating="2"></i>
+                                <i class="far fa-star" data-rating="3"></i>
+                                <i class="far fa-star" data-rating="4"></i>
+                                <i class="far fa-star" data-rating="5"></i>
+                            </div>
+                            <input type="hidden" id="ratingValue" name="rating" value="0" required>
+                            <div class="rating-text">
+                                <span id="ratingDescription">Select your rating</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="testimonialText"><i class="fas fa-comment"></i> Your Testimonial *</label>
+                        <textarea id="testimonialText" name="testimonialText" rows="5" placeholder="Share your detailed experience with our service. What did you like? How did we help you?" required></textarea>
+                        <div class="char-count">
+                            <span id="charCount">0</span> / 500 characters
+                        </div>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="permission" name="permission" required>
+                        <label for="permission">I give permission to publish this testimonial on your website and marketing materials</label>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Submit Testimonial
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i> We'll verify your service details before publishing
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section testimonials-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">4.9/5</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Published Reviews</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Recommend Us</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section service-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Ready to Become Our Next Success Story?</h2>
+                    <p>Join thousands of satisfied customers who trust us with their important service needs.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-98866 93316</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jayanagar 3rd Block, Bengaluru</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-action">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20want%20to%20experience%20your%20excellent%20service%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp for Service
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Call for Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Trusted by thousands of satisfied customers for professional service assistance in Bengaluru.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="how-it-works.html"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="why-choose-us.html"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="testimonials.html" class="active"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/document-assistance.html"><i class="fas fa-chevron-right"></i> Document Assistance</a></li>
+                        <li><a href="services/financial-assistance.html"><i class="fas fa-chevron-right"></i> Financial Assistance</a></li>
+                        <li><a href="services/travel-assistance.html"><i class="fas fa-chevron-right"></i> Travel Assistance</a></li>
+                        <li><a href="services/company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                        <li><a href="services/recharge-utility.html"><i class="fas fa-chevron-right"></i> Recharge & Utility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-<span id="currentYear">2023</span> Ozone Service Solutions. All Rights Reserved. | Serving Bengaluru Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20read%20your%20testimonials%20and%20want%20similar%20service%20for%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Read Testimonials</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../script.js"></script>
+    <script src="../three-models.js"></script>
+    <script src="../assets/js/scroll-effects.js"></script>
+    <script src="../assets/js/counter-animation.js"></script>
+    
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Testimonials Filtering and Search
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const searchInput = document.getElementById('testimonialSearch');
+            
+            // Filter functionality
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter testimonials
+                    testimonialCards.forEach(card => {
+                        if (filterValue === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            const cardCategory = card.getAttribute('data-category');
+                            if (cardCategory === filterValue) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+            
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                testimonialCards.forEach(card => {
+                    const cardContent = card.textContent.toLowerCase();
+                    if (cardContent.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Star rating for testimonial form
+            const stars = document.querySelectorAll('.stars-selector i');
+            const ratingValue = document.getElementById('ratingValue');
+            const ratingDescription = document.getElementById('ratingDescription');
+            
+            const ratingDescriptions = {
+                0: "Select your rating",
+                1: "Poor - Very dissatisfied",
+                2: "Fair - Could be better",
+                3: "Good - Met expectations",
+                4: "Very Good - Exceeded expectations",
+                5: "Excellent - Absolutely perfect"
+            };
+            
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    ratingValue.value = rating;
+                    ratingDescription.textContent = ratingDescriptions[rating];
+                    
+                    // Update star display
+                    stars.forEach((s, index) => {
+                        if (index < rating) {
+                            s.className = 'fas fa-star';
+                        } else {
+                            s.className = 'far fa-star';
+                        }
+                    });
+                });
+                
+                star.addEventListener('mouseover', function() {
+                    const hoverRating = this.getAttribute('data-rating');
+                    
+                    stars.forEach((s, index) => {
+                        if (index < hoverRating) {
+                            s.className = 'fas fa-star';
+                        } else {
+                            s.className = 'far fa-star';
+                        }
+                    });
+                });
+            });
+            
+            // Reset stars on mouse leave
+            document.querySelector('.stars-selector').addEventListener('mouseleave', function() {
+                const currentRating = ratingValue.value;
+                
+                stars.forEach((star, index) => {
+                    if (index < currentRating) {
+                        star.className = 'fas fa-star';
+                    } else {
+                        star.className = 'far fa-star';
+                    }
+                });
+            });
+            
+            // Character count for testimonial text
+            const testimonialText = document.getElementById('testimonialText');
+            const charCount = document.getElementById('charCount');
+            
+            testimonialText.addEventListener('input', function() {
+                const length = this.value.length;
+                charCount.textContent = length;
+                
+                if (length > 500) {
+                    this.value = this.value.substring(0, 500);
+                    charCount.textContent = 500;
+                }
+            });
+            
+            // Testimonial form submission
+            document.getElementById('testimonialForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (ratingValue.value === '0') {
+                    alert('Please select a rating');
+                    return;
+                }
+                
+                // Collect form data
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // Create WhatsApp message
+                const whatsappMessage = `New Testimonial Submission:%0A%0AName: ${data.clientName}%0APhone: ${data.clientPhone}%0AService: ${data.serviceType}%0ARating: ${data.rating}/5%0ATitle: ${data.testimonialTitle}%0ATestimonial: ${data.testimonialText.substring(0, 100)}...`;
+                
+                // Open WhatsApp
+                window.open(`https://wa.me/919886693316?text=${whatsappMessage}`, '_blank');
+                
+                // Reset form
+                this.reset();
+                ratingValue.value = '0';
+                ratingDescription.textContent = 'Select your rating';
+                stars.forEach(star => star.className = 'far fa-star');
+                charCount.textContent = '0';
+                
+                // Show success message
+                alert('Thank you for your testimonial! We\'ll verify and publish it soon.');
+            });
+            
+            // Animate stats
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const stat = entry.target;
+                        const target = parseInt(stat.textContent.replace(/[^0-9]/g, ''));
+                        const suffix = stat.textContent.replace(/[0-9]/g, '');
+                        let current = 0;
+                        const increment = target / 30;
+                        
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                stat.textContent = target + suffix;
+                                clearInterval(timer);
+                            } else {
+                                stat.textContent = Math.floor(current) + suffix;
+                            }
+                        }, 30);
+                        
+                        observer.unobserve(stat);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statNumbers.forEach(stat => {
+                observer.observe(stat);
+            });
+            
+            // Video play buttons
+            document.querySelectorAll('.play-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    alert('Video testimonials will play here. For now, please contact us for video references.');
+                });
+            });
+            
+            // Pagination buttons
+            document.querySelectorAll('.pagination-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (this.classList.contains('next')) return;
+                    
+                    document.querySelectorAll('.pagination-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // In a real implementation, this would load more testimonials
+                    alert('More testimonials would load here. Currently showing page 1.');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

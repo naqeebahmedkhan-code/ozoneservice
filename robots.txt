@@ -1,0 +1,62 @@
+# Ozone Service Solutions - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /wp-admin/
+Disallow: /wp-content/plugins/
+Disallow: /wp-includes/
+Disallow: /search/
+Disallow: /?s=
+Disallow: /*?s=
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.php$
+
+# Sitemaps
+Sitemap: https://ozoneservice.co.in/sitemap.xml
+Sitemap: https://ozoneservice.co.in/sitemap-pages.xml
+Sitemap: https://ozoneservice.co.in/sitemap-services.xml
+
+# Crawl delay
+Crawl-delay: 2
+
+# Host
+Host: https://ozoneservice.co.in
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+
+# Bingbot specific
+User-agent: bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex specific
+User-agent: Yandex
+Allow: /
+Disallow: /*.pdf$
+
+# Bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /

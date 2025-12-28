@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical License & Assistance for Doctors | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="Professional assistance for doctors - Medical Council registration, KPME license, clinic setup, hospital licenses, and all medical documentation services in Bengaluru.">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#" class="active"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="doctors-assistance.html" class="active"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                        </div>
+                    </div>
+                    <a href="../how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="../why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="../testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="../contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero medical-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-user-md"></i> Medical Professionals</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Specialized <span class="highlight">Assistance for Doctors</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Complete documentation and licensing services for medical professionals. 
+                    From medical council registration to clinic setup, we handle all your administrative needs.
+                </p>
+                
+                <div class="doctor-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Doctors Served</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">18+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Compliance</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hello%20Ozone%20Service%20Solutions!%20I%20am%20a%20doctor%20needing%20assistance%20with%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Medical License Assistance
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call Doctor Helpline
+                    </a>
+                </div>
+            </div>
+            
+            <div class="medical-scene">
+                <div class="medical-icons">
+                    <i class="fas fa-stethoscope"></i>
+                    <i class="fas fa-hospital"></i>
+                    <i class="fas fa-clinic-medical"></i>
+                    <i class="fas fa-prescription"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services for Doctors -->
+    <section class="section doctor-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services for Medical Professionals</h2>
+                <p>Comprehensive solutions for doctors, clinics, and hospitals</p>
+            </div>
+            
+            <div class="services-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="licensing">Medical Licensing</button>
+                    <button class="tab-btn" data-tab="clinic">Clinic Setup</button>
+                    <button class="tab-btn" data-tab="hospital">Hospital Services</button>
+                    <button class="tab-btn" data-tab="documentation">Documentation</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="licensing">
+                        <div class="services-grid">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-id-card"></i>
+                                </div>
+                                <h3>Medical Council Registration</h3>
+                                <p>Karnataka Medical Council (KMC) registration, renewal, good standing certificates, 
+                                and transfer of registration.</p>
+                                <ul>
+                                    <li>New Registration</li>
+                                    <li>Renewal Services</li>
+                                    <li>Transfer of Registration</li>
+                                    <li>Good Standing Certificate</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <h3>KPME License</h3>
+                                <p>Karnataka Private Medical Establishments Act registration and renewal 
+                                for clinics and nursing homes.</p>
+                                <ul>
+                                    <li>New KPME License</li>
+                                    <li>Renewal Services</li>
+                                    <li>Amendment Services</li>
+                                    <li>Display Board Compliance</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-syringe"></i>
+                                </div>
+                                <h3>Pharmacy License</h3>
+                                <p>Drug license registration, renewal for pharmacies, 
+                                wholesale and retail drug licenses.</p>
+                                <ul>
+                                    <li>Retail Drug License</li>
+                                    <li>Wholesale License</li>
+                                    <li>Blood Bank License</li>
+                                    <li>Medical Gas License</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="clinic">
+                        <!-- Clinic setup services content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Medical Licensing Details -->
+    <section class="section licensing-details bg-light">
+        <div class="container">
+            <h2 class="section-title">Medical Licensing Services</h2>
+            
+            <div class="licensing-grid">
+                <div class="licensing-card">
+                    <h3><i class="fas fa-user-md"></i> For Individual Doctors</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Karnataka Medical Council Registration</li>
+                        <li><i class="fas fa-check"></i> Medical Council of India (MCI) Registration</li>
+                        <li><i class="fas fa-check"></i> State Medical Council Transfers</li>
+                        <li><i class="fas fa-check"></i> Good Standing Certificate</li>
+                        <li><i class="fas fa-check"></i> Registration Renewal</li>
+                        <li><i class="fas fa-check"></i> Duplicate Registration Certificate</li>
+                    </ul>
+                </div>
+                
+                <div class="licensing-card">
+                    <h3><i class="fas fa-clinic-medical"></i> For Clinics & Nursing Homes</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> KPME Registration & Renewal</li>
+                        <li><i class="fas fa-check"></i> Fire Safety Certificate</li>
+                        <li><i class="fas fa-check"></i> Pollution Control Board Certificate</li>
+                        <li><i class="fas fa-check"></i> Biomedical Waste Management</li>
+                        <li><i class="fas fa-check"></i> Shop & Establishment License</li>
+                        <li><i class="fas fa-check"></i> GST Registration for Clinics</li>
+                    </ul>
+                </div>
+                
+                <div class="licensing-card">
+                    <h3><i class="fas fa-hospital"></i> For Hospitals</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Hospital Registration Certificate</li>
+                        <li><i class="fas fa-check"></i> NABH Accreditation Assistance</li>
+                        <li><i class="fas fa-check"></i> Biomedical Waste Authorization</li>
+                        <li><i class="fas fa-check"></i> Fire Department NOC</li>
+                        <li><i class="fas fa-check"></i> Lift License & Safety Certificate</li>
+                        <li><i class="fas fa-check"></i> Pollution Control Certificate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Documents Required -->
+    <section class="section documents-required">
+        <div class="container">
+            <h2 class="section-title">Documents Required for Medical Licensing</h2>
+            
+            <div class="document-grid">
+                <div class="document-category">
+                    <h3><i class="fas fa-graduation-cap"></i> Educational Documents</h3>
+                    <ul>
+                        <li>MBBS Degree Certificate</li>
+                        <li>Post Graduate Degree Certificate</li>
+                        <li>Internship Completion Certificate</li>
+                        <li>Medical Council Registration (if any)</li>
+                        <li>Experience Certificates</li>
+                    </ul>
+                </div>
+                
+                <div class="document-category">
+                    <h3><i class="fas fa-id-card"></i> Identity Documents</h3>
+                    <ul>
+                        <li>Aadhaar Card</li>
+                        <li>PAN Card</li>
+                        <li>Passport Size Photographs</li>
+                        <li>Address Proof</li>
+                        <li>Signature Proof</li>
+                    </ul>
+                </div>
+                
+                <div class="document-category">
+                    <h3><i class="fas fa-building"></i> Premises Documents</h3>
+                    <ul>
+                        <li>Rental Agreement/Property Documents</li>
+                        <li>NOC from Owner</li>
+                        <li>Site Plan/Layout Plan</li>
+                        <li>Fire Safety Certificate</li>
+                        <li>Property Tax Receipt</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section class="section process-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Process for Medical Licensing</h2>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Consultation & Document Collection</h3>
+                        <p>We understand your requirements and collect all necessary documents</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Application Preparation</h3>
+                        <p>Prepare and verify all application forms and supporting documents</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Submission & Follow-up</h3>
+                        <p>Submit applications to respective authorities and regular follow-up</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Certificate Delivery</h3>
+                        <p>Collect and deliver your medical license/certificate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section doctor-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Need Medical License Assistance?</h2>
+                    <p>Contact our medical documentation experts for prompt assistance with all your licensing needs.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Doctor Helpline</h4>
+                                <p>+91 98866 93316</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email for Doctors</h4>
+                                <p>ozoneservicesolutions@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Consultation Hours</h4>
+                                <p>Mon-Sat: 9:30 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-form">
+                    <h3>Quick Doctor Inquiry</h3>
+                    <form id="doctorInquiryForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Dr. Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Contact Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service Needed</option>
+                                <option>KMC Registration</option>
+                                <option>KPME License</option>
+                                <option>Clinic Setup</option>
+                                <option>Pharmacy License</option>
+                                <option>Other Medical License</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fab fa-whatsapp"></i> Send Medical Query
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Specialized documentation and licensing services for medical professionals 
+                        in Bengaluru. Trusted by doctors since 2006.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Medical Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="doctors-assistance.html" class="active"><i class="fas fa-chevron-right"></i> Doctors Assistance</a></li>
+                        <li><a href="medical-licenses.html"><i class="fas fa-chevron-right"></i> Medical Licenses</a></li>
+                        <li><a href="clinic-setup.html"><i class="fas fa-chevron-right"></i> Clinic Setup</a></li>
+                        <li><a href="pharmacy-license.html"><i class="fas fa-chevron-right"></i> Pharmacy License</a></li>
+                        <li><a href="hospital-registration.html"><i class="fas fa-chevron-right"></i> Hospital Registration</a></li>
+                        <li><a href="biomedical-waste.html"><i class="fas fa-chevron-right"></i> Biomedical Waste</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="../how-it-works.html"><i class="fas fa-chevron-right"></i> Process</a></li>
+                        <li><a href="../testimonials.html"><i class="fas fa-chevron-right"></i> Doctor Testimonials</a></li>
+                        <li><a href="../contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-2023 Ozone Service Solutions. All Rights Reserved. | Medical Services Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hello%20Ozone%20Service%20Solutions!%20I%20am%20a%20doctor%20needing%20assistance%20with%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Medical Help</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="../../script.js"></script>
+    <script src="../../assets/js/scroll-effects.js"></script>
+    
+    <script>
+        // Tab functionality for doctor services
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding pane
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Doctor inquiry form
+            const doctorForm = document.getElementById('doctorInquiryForm');
+            if (doctorForm) {
+                doctorForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = this.querySelector('input[type="text"]').value;
+                    const phone = this.querySelector('input[type="tel"]').value;
+                    const service = this.querySelector('select').value;
+                    
+                    const message = `Doctor Inquiry%0A%0ADoctor Name: ${name}%0AContact: ${phone}%0AService Needed: ${service}%0A%0APlease assist with medical licensing.`;
+                    
+                    window.open(`https://wa.me/919886693316?text=${message}`, '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge & Utility Bill Payment Services | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="One-stop recharge & utility bill payment services in Bengaluru - Mobile, DTH, electricity, water, gas, FASTag, insurance payments. Trusted since 2006.">
+    <meta name="keywords" content="bill payment services Bangalore, mobile recharge, electricity bill payment, DTH recharge, water bill payment, gas bill payment, FASTag recharge, utility payments Bengaluru">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#" class="active"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                            <a href="recharge-utility.html" class="active"><i class="fas fa-bolt"></i> Recharge & Utility</a>
+                        </div>
+                    </div>
+                    <a href="../how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="../why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="../testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="../contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-bolt"></i> Quick Recharge Services</span>
+                </div>
+                <h1 class="hero-title">
+                    One-Stop <span class="highlight">Recharge & Utility</span> Bill Payments
+                </h1>
+                <p class="hero-subtitle">
+                    Pay all your utility bills and recharge mobile, DTH, FASTag at one place. Quick, secure, and reliable bill payment services for individuals and businesses.
+                </p>
+                <div class="service-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-bolt"></i>
+                        <span>Instant Processing</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Payments</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Recharge%20Utility%20Services%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp for Recharge
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                </div>
+            </div>
+            <!-- 3D Payment Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="recharge-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="section service-details">
+        <div class="container">
+            <div class="service-detail-content">
+                <div class="service-description">
+                    <h2>Complete Recharge & Utility Payment Services</h2>
+                    <p>Ozone Service Solutions provides comprehensive recharge and utility bill payment services for all your daily needs. From mobile recharges to electricity bills, we offer quick, secure, and reliable payment solutions.</p>
+                    
+                    <div class="utility-services-grid">
+                        <!-- Mobile & DTH Services -->
+                        <div class="utility-category">
+                            <div class="category-header">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>Mobile & DTH Recharges</h3>
+                            </div>
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-sim-card"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Mobile Recharge</h4>
+                                        <p>All networks: Airtel, Jio, Vi, BSNL. Prepaid & postpaid recharges, data packs, roaming packs.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-satellite-dish"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>DTH Recharge</h4>
+                                        <p>Tata Play, Airtel DTH, Dish TV, Sun Direct. All package recharges and new connections.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-wifi"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Broadband Recharge</h4>
+                                        <p>ACT, Airtel, Jio Fiber, BSNL broadband, Hathway. Bill payments and recharges.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Utility Bills -->
+                        <div class="utility-category">
+                            <div class="category-header">
+                                <i class="fas fa-home"></i>
+                                <h3>Utility Bill Payments</h3>
+                            </div>
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Electricity Bills</h4>
+                                        <p>BESCOM, KPTCL, and all electricity boards. Current & advance payments.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-tint"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Water Bills</h4>
+                                        <p>BWSSB and municipal water bills. Regular and late fee payments.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-fire"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Gas Bills</h4>
+                                        <p>Indane, Bharat Gas, HP Gas. LPG cylinder booking and bill payments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Transport & Insurance -->
+                        <div class="utility-category">
+                            <div class="category-header">
+                                <i class="fas fa-car"></i>
+                                <h3>Transport & Insurance</h3>
+                            </div>
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-tag"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>FASTag Recharge</h4>
+                                        <p>All FASTag providers: ICICI, HDFC, Axis, Paytm, PhonePe. Quick recharge and balance check.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Insurance Premium</h4>
+                                        <p>LIC, health insurance, motor insurance, term insurance premium payments.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Credit Card Bills</h4>
+                                        <p>All bank credit card payments: HDFC, ICICI, SBI, Axis, Citibank.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Other Payments -->
+                        <div class="utility-category">
+                            <div class="category-header">
+                                <i class="fas fa-receipt"></i>
+                                <h3>Other Payments</h3>
+                            </div>
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-landmark"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Municipal Taxes</h4>
+                                        <p>Property tax, house tax, BBMP tax payments with receipt generation.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-tv"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Cable TV Bills</h4>
+                                        <p>Local cable operator bills, Hathway, DEN, other cable networks.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-file-invoice"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Loan EMIs</h4>
+                                        <p>Home loan, car loan, personal loan EMI payments for all banks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h3>Accepted Payment Methods</h3>
+                        <div class="methods-grid">
+                            <div class="method-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>Cash</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>UPI</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Debit/Credit Card</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fas fa-university"></i>
+                                <span>Net Banking</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fas fa-wallet"></i>
+                                <span>Mobile Wallets</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>Bank Transfer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-benefits">
+                    <h3>Why Use Our Recharge Services</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <strong>One-Stop Solution:</strong> All bills at one place</li>
+                        <li><i class="fas fa-check"></i> <strong>Instant Processing:</strong> Recharges done within minutes</li>
+                        <li><i class="fas fa-check"></i> <strong>24/7 Service:</strong> Available beyond business hours</li>
+                        <li><i class="fas fa-check"></i> <strong>No Extra Charges:</strong> Same as online platforms</li>
+                        <li><i class="fas fa-check"></i> <strong>Receipt Confirmation:</strong> Instant payment confirmation</li>
+                        <li><i class="fas fa-check"></i> <strong>Assisted Service:</strong> Help for non-tech savvy customers</li>
+                    </ul>
+                    
+                    <div class="quick-recharge-form">
+                        <h4>Quick Recharge Request</h4>
+                        <form id="rechargeForm">
+                            <div class="form-group">
+                                <label for="rechargeType"><i class="fas fa-list"></i> Service Type *</label>
+                                <select id="rechargeType" name="rechargeType" required>
+                                    <option value="">Select Service</option>
+                                    <option value="mobile">Mobile Recharge</option>
+                                    <option value="dth">DTH Recharge</option>
+                                    <option value="electricity">Electricity Bill</option>
+                                    <option value="water">Water Bill</option>
+                                    <option value="fastag">FASTag Recharge</option>
+                                    <option value="other">Other Bill Payment</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="amount"><i class="fas fa-rupee-sign"></i> Amount *</label>
+                                <input type="number" id="amount" name="amount" placeholder="Enter amount" min="10" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact"><i class="fas fa-phone"></i> Contact Number *</label>
+                                <input type="tel" id="contact" name="contact" placeholder="Your mobile number" required>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i> Send Recharge Request
+                            </button>
+                        </form>
+                        <p class="form-note"><i class="fas fa-info-circle"></i> We'll WhatsApp you payment link within 2 minutes</p>
+                    </div>
+                    
+                    <div class="business-benefits">
+                        <h4>Benefits for Businesses</h4>
+                        <ul>
+                            <li><i class="fas fa-building"></i> Bulk recharge services for employees</li>
+                            <li><i class="fas fa-file-invoice"></i> Monthly utility bill management</li>
+                            <li><i class="fas fa-receipt"></i> Organized payment receipts</li>
+                            <li><i class="fas fa-clock"></i> Timely payments to avoid penalties</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="section process-section">
+        <div class="container">
+            <h2 class="section-title">How Our Recharge Service Works</h2>
+            <p class="section-subtitle">Simple 3-step process for all recharge and bill payments</p>
+            
+            <div class="process-timeline">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Request Submission</h3>
+                        <p>Share your recharge/bill details via WhatsApp, call, or visit our office.</p>
+                    </div>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Payment Processing</h3>
+                        <p>Make payment through cash, UPI, or card. We process instantly.</p>
+                    </div>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Confirmation & Receipt</h3>
+                        <p>Receive instant payment confirmation and digital receipt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Providers -->
+    <section class="section providers-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>We Serve All Major Providers</h2>
+                <p>Wide range of service providers supported</p>
+            </div>
+            
+            <div class="providers-grid">
+                <div class="provider-category">
+                    <h3><i class="fas fa-signal"></i> Telecom Providers</h3>
+                    <div class="provider-logos">
+                        <div class="provider-logo">Airtel</div>
+                        <div class="provider-logo">Jio</div>
+                        <div class="provider-logo">Vi</div>
+                        <div class="provider-logo">BSNL</div>
+                    </div>
+                </div>
+                
+                <div class="provider-category">
+                    <h3><i class="fas fa-bolt"></i> Electricity Boards</h3>
+                    <div class="provider-logos">
+                        <div class="provider-logo">BESCOM</div>
+                        <div class="provider-logo">KPTCL</div>
+                        <div class="provider-logo">MESCOM</div>
+                        <div class="provider-logo">HESCOM</div>
+                    </div>
+                </div>
+                
+                <div class="provider-category">
+                    <h3><i class="fas fa-satellite-dish"></i> DTH Providers</h3>
+                    <div class="provider-logos">
+                        <div class="provider-logo">Tata Play</div>
+                        <div class="provider-logo">Airtel DTH</div>
+                        <div class="provider-logo">Dish TV</div>
+                        <div class="provider-logo">Sun Direct</div>
+                    </div>
+                </div>
+                
+                <div class="provider-category">
+                    <h3><i class="fas fa-shield-alt"></i> Insurance Companies</h3>
+                    <div class="provider-logos">
+                        <div class="provider-logo">LIC</div>
+                        <div class="provider-logo">HDFC Life</div>
+                        <div class="provider-logo">ICICI Pru</div>
+                        <div class="provider-logo">SBI Life</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recharge & Utility FAQs</h2>
+                <p>Common questions about our payment services</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How quickly are recharges processed?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Mobile and DTH recharges are processed within 2-5 minutes. Utility bills take 15-30 minutes for confirmation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you charge extra fees for bill payments?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, we charge the exact bill amount without any extra fees. Our service is completely free for customers.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I pay bills after office hours?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we accept WhatsApp requests 24/7. Payments processed during next working hours if sent late night.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What if a recharge fails?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>In case of failed transaction, we immediately refund the amount or reprocess as per your preference.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you provide payment receipts?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide digital receipts for all payments via WhatsApp or email for your records.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="../faq.html" class="btn btn-secondary">
+                    <i class="fas fa-question-circle"></i> View All FAQs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Services -->
+    <section class="section emergency-services bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-exclamation-circle"></i> Emergency Recharge Services</h2>
+                <p>Never run out of balance with our priority services</p>
+            </div>
+            
+            <div class="emergency-features">
+                <div class="emergency-feature">
+                    <div class="emergency-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h4>Late Night Recharge</h4>
+                        <p>Emergency mobile recharge services available till midnight</p>
+                    </div>
+                </div>
+                
+                <div class="emergency-feature">
+                    <div class="emergency-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h4>Electricity Bill Urgent</h4>
+                        <p>Last day bill payments to avoid disconnection</p>
+                    </div>
+                </div>
+                
+                <div class="emergency-feature">
+                    <div class="emergency-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h4>Gas Cylinder Emergency</h4>
+                        <p>Urgent LPG booking when cylinder is empty</p>
+                    </div>
+                </div>
+                
+                <div class="emergency-feature">
+                    <div class="emergency-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h4>FASTag Low Balance</h4>
+                        <p>Immediate FASTag recharge for highway travel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section service-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Need Quick Recharge or Bill Payment?</h2>
+                    <p>Contact us for instant recharge and utility bill payment services.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-98866 93316</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jayanagar 3rd Block, Bengaluru</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-action">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Recharge%20Utility%20Services%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp for Recharge
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Call for Bill Payment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        One-stop recharge & utility bill payment services with instant processing in Bengaluru.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="../how-it-works.html"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="../why-choose-us.html"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="../testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="../contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="document-assistance.html"><i class="fas fa-chevron-right"></i> Document Assistance</a></li>
+                        <li><a href="financial-assistance.html"><i class="fas fa-chevron-right"></i> Financial Assistance</a></li>
+                        <li><a href="travel-assistance.html"><i class="fas fa-chevron-right"></i> Travel Assistance</a></li>
+                        <li><a href="company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                        <li><a href="recharge-utility.html" class="active"><i class="fas fa-chevron-right"></i> Recharge & Utility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM<br>Sun: 10 AM - 2 PM (Recharge only)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-<span id="currentYear">2023</span> Ozone Service Solutions. All Rights Reserved. | Serving Bengaluru Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Recharge%20Utility%20Services%20for%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Quick Recharge</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../../script.js"></script>
+    <script src="../../three-models.js"></script>
+    <script src="../../assets/js/scroll-effects.js"></script>
+    <script src="../../assets/js/form-validator.js"></script>
+    <script src="../../assets/js/service-quote.js"></script>
+    
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Recharge form submission
+        document.getElementById('rechargeForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const rechargeType = document.getElementById('rechargeType').value;
+            const amount = document.getElementById('amount').value;
+            const contact = document.getElementById('contact').value;
+            
+            if (!rechargeType || !amount || !contact) {
+                alert('Please fill all required fields');
+                return;
+            }
+            
+            // Create WhatsApp message
+            const serviceNames = {
+                'mobile': 'Mobile Recharge',
+                'dth': 'DTH Recharge',
+                'electricity': 'Electricity Bill',
+                'water': 'Water Bill',
+                'fastag': 'FASTag Recharge',
+                'other': 'Other Bill Payment'
+            };
+            
+            const serviceName = serviceNames[rechargeType] || rechargeType;
+            const whatsappMessage = `Recharge Request:%0A%0AService: ${serviceName}%0AAmount: ₹${amount}%0AContact: ${contact}%0A%0APlease send payment link.`;
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/919886693316?text=${whatsappMessage}`, '_blank');
+            
+            // Reset form
+            this.reset();
+            
+            // Show confirmation
+            alert('Opening WhatsApp to complete your recharge request. We\'ll send payment link within 2 minutes.');
+        });
+        
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle active class
+                    this.parentElement.classList.toggle('active');
+                    
+                    // Toggle icon
+                    if (this.parentElement.classList.contains('active')) {
+                        icon.className = 'fas fa-chevron-up';
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        icon.className = 'fas fa-chevron-down';
+                        answer.style.maxHeight = null;
+                    }
+                    
+                    // Close other FAQs
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== this) {
+                            otherQuestion.parentElement.classList.remove('active');
+                            otherQuestion.querySelector('i').className = 'fas fa-chevron-down';
+                            otherQuestion.nextElementSibling.style.maxHeight = null;
+                        }
+                    });
+                });
+            });
+            
+            // Add hover effects to provider logos
+            const providerLogos = document.querySelectorAll('.provider-logo');
+            providerLogos.forEach(logo => {
+                logo.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                });
+                logo.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                    this.style.boxShadow = '0 2px 5px rgba(0,0,0,0.05)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

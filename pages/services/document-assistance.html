@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Assistance Services | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="Complete document assistance services in Bengaluru - Passport, ID cards, certificates, affidavits, registrations. Quick, confidential, reliable since 2006.">
+    <meta name="keywords" content="document assistance Bangalore, passport services Bengaluru, ID card help, certificate attestation, document processing">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#" class="active"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="document-assistance.html" class="active"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                        </div>
+                    </div>
+                    <a href="../how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="../why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="../testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="../contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-medal"></i> Most Popular Service</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Complete <span class="highlight">Document Assistance</span> Services
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Fast, accurate, and confidential document assistance for passports, IDs, certificates, and registrations. 
+                    Ensuring a smooth and hassle-free process since 2006.
+                </p>
+                
+                <div class="service-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-bolt"></i>
+                        <span>3-7 Days Processing</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-lock"></i>
+                        <span>100% Confidential</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span>Transparent Pricing</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Document%20Assistance%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Get Document Help
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call for Consultation
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 3D Document Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="document-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="section service-details">
+        <div class="container">
+            <div class="service-detail-content">
+                <div class="service-description">
+                    <h2>What We Offer</h2>
+                    <p>Ozone Service Solutions provides comprehensive document assistance services for all your personal and professional documentation needs. With 18+ years of experience, we ensure every document is processed with accuracy, speed, and complete confidentiality.</p>
+                    
+                    <h3>Our Document Services Include:</h3>
+                    
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-passport"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Passport Services</h4>
+                                <p>Fresh passport applications, renewals, corrections, police clearance, and all related services with complete guidance and support.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>ID Cards & Certificates</h4>
+                                <p>Aadhaar card, PAN card, driving license, birth certificates, marriage certificates, death certificates, and all government ID processing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Affidavits & Notarization</h4>
+                                <p>Legal document preparation, affidavit creation, notarization services, and attestation support for various purposes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-registered"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Registrations</h4>
+                                <p>Property registration, vehicle registration, business registrations, and all government registration services.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Educational Documents</h4>
+                                <p>Degree certificates, mark sheets, migration certificates, and all educational document processing and attestation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Property Documents</h4>
+                                <p>Sale deed registration, khata transfer, mutation, encumbrance certificate, and all property-related documentation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-benefits">
+                    <h3>Why Choose Our Document Services</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <strong>Expert Guidance:</strong> Step-by-step assistance throughout the process</li>
+                        <li><i class="fas fa-check"></i> <strong>Time-Saving:</strong> Save hours of government office visits</li>
+                        <li><i class="fas fa-check"></i> <strong>Error-Free:</strong> Professional verification to avoid rejections</li>
+                        <li><i class="fas fa-check"></i> <strong>Status Updates:</strong> Regular progress updates on your application</li>
+                        <li><i class="fas fa-check"></i> <strong>Secure Handling:</strong> Complete confidentiality of your documents</li>
+                        <li><i class="fas fa-check"></i> <strong>Bulk Discounts:</strong> Special rates for multiple documents</li>
+                    </ul>
+                    
+                    <div class="pricing-info">
+                        <h4>Transparent Pricing</h4>
+                        <p>Clear upfront pricing with no hidden charges. Contact us for a customized quote based on your specific requirements.</p>
+                        <a href="tel:+919886693316" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Get Price Quote
+                        </a>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <p><strong>Need urgent document assistance?</strong></p>
+                        <a href="https://wa.me/919886693316" class="btn btn-whatsapp btn-small">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="section process-section">
+        <div class="container">
+            <h2 class="section-title">Our Document Process</h2>
+            <p class="section-subtitle">Simple 4-step process for hassle-free document assistance</p>
+            
+            <div class="process-timeline">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Consultation & Requirement Analysis</h3>
+                        <p>We understand your document needs, verify requirements, and provide a clear action plan with timeline and cost estimate.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Document Collection & Verification</h3>
+                        <p>We guide you on required documents, help with collection, and professionally verify everything to ensure accuracy.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Processing & Government Liaison</h3>
+                        <p>Our experts handle all paperwork, submissions, and government office coordination while keeping you updated.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Delivery & Follow-up Support</h3>
+                        <p>Receive your processed documents with proper guidance. We provide follow-up support if any additional steps are needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Documents -->
+    <section class="section documents-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Required Documents</h2>
+                <p>Common documents needed for various services</p>
+            </div>
+            
+            <div class="documents-grid">
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Passport</h3>
+                    <ul>
+                        <li>Aadhaar Card</li>
+                        <li>PAN Card</li>
+                        <li>Birth Certificate</li>
+                        <li>Address Proof</li>
+                        <li>Passport Photos</li>
+                    </ul>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Aadhaar Card</h3>
+                    <ul>
+                        <li>Address Proof</li>
+                        <li>Identity Proof</li>
+                        <li>Date of Birth Proof</li>
+                        <li>Recent Photo</li>
+                    </ul>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Driving License</h3>
+                    <ul>
+                        <li>Age Proof</li>
+                        <li>Address Proof</li>
+                        <li>Medical Certificate</li>
+                        <li>Passport Photos</li>
+                    </ul>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Registration</h3>
+                    <ul>
+                        <li>Sale Deed</li>
+                        <li>Khata Certificate</li>
+                        <li>Encumbrance Certificate</li>
+                        <li>Identity Proof</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section service-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Need Document Assistance?</h2>
+                    <p>Contact us today for professional, reliable, and confidential document services in Bengaluru.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-98866 93316</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jayanagar 3rd Block, Bengaluru</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-action">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Document%20Assistance%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Call for Help
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Professional and personal document assistance with quick, efficient, and confidential services in Bengaluru.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="../how-it-works.html"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="../why-choose-us.html"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="../testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="../contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="document-assistance.html" class="active"><i class="fas fa-chevron-right"></i> Document Assistance</a></li>
+                        <li><a href="financial-assistance.html"><i class="fas fa-chevron-right"></i> Financial Assistance</a></li>
+                        <li><a href="travel-assistance.html"><i class="fas fa-chevron-right"></i> Travel Assistance</a></li>
+                        <li><a href="company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                        <li><a href="doctors-assistance.html"><i class="fas fa-chevron-right"></i> Assistance to Doctors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-<span id="currentYear">2023</span> Ozone Service Solutions. All Rights Reserved. | Serving Bengaluru Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Document%20Assistance%20for%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Document Help</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../../script.js"></script>
+    <script src="../../three-models.js"></script>
+    <script src="../../assets/js/scroll-effects.js"></script>
+    <script src="../../assets/js/counter-animation.js"></script>
+    <script src="../../assets/js/form-validator.js"></script>
+    
+    <script>
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="FAQs about Ozone Service Solutions - Document assistance, financial services, company registration, GST filing, passport services, and more since 2006.">
+    <meta name="keywords" content="FAQs, frequently asked questions, document services queries, company registration questions, GST filing FAQ, Bengaluru service queries">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services/document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="services/financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="services/travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="services/company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="services/doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="services/gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="services/passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="services/medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="services/aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="services/attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                            <a href="services/recharge-utility.html"><i class="fas fa-bolt"></i> Recharge & Utility</a>
+                        </div>
+                    </div>
+                    <a href="how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="faq.html" class="active"><i class="fas fa-question-circle"></i> FAQ</a>
+                    <a href="contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FAQ Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-question-circle"></i> Get Answers</span>
+                </div>
+                <h1 class="hero-title">
+                    Frequently Asked <span class="highlight">Questions</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Find quick answers to common questions about our services, processes, pricing, and more. Can't find your answer? Contact us directly.
+                </p>
+                <div class="service-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-search"></i>
+                        <span>Quick Search</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-comments"></i>
+                        <span>Expert Answers</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-clock"></i>
+                        <span>Updated Regularly</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                    <a href="#ask-question" class="btn btn-secondary btn-large">
+                        <i class="fas fa-edit"></i> Ask Your Question
+                    </a>
+                </div>
+            </div>
+            <!-- 3D FAQ Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="faq-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search FAQ -->
+    <section class="section faq-search">
+        <div class="container">
+            <div class="search-container">
+                <h2>Search Your Question</h2>
+                <p>Type keywords related to your question in the box below</p>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="faqSearch" placeholder="e.g., passport renewal, GST registration, company formation...">
+                    <button id="searchBtn">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="popular-searches">
+                    <span>Popular searches:</span>
+                    <a href="#document-faq" class="search-tag">Passport</a>
+                    <a href="#financial-faq" class="search-tag">GST Filing</a>
+                    <a href="#company-faq" class="search-tag">Company Registration</a>
+                    <a href="#travel-faq" class="search-tag">Visa Processing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="section faq-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <a href="#document-faq" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Document Services</h3>
+                    <p>Passport, Aadhaar, PAN, certificates</p>
+                    <span class="count">12 questions</span>
+                </a>
+                
+                <a href="#financial-faq" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Financial Services</h3>
+                    <p>Banking, loans, GST, tax filing</p>
+                    <span class="count">10 questions</span>
+                </a>
+                
+                <a href="#company-faq" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Company Services</h3>
+                    <p>Registration, compliance, licenses</p>
+                    <span class="count">8 questions</span>
+                </a>
+                
+                <a href="#travel-faq" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Travel Services</h3>
+                    <p>Visa, passport, travel booking</p>
+                    <span class="count">6 questions</span>
+                </a>
+                
+                <a href="#medical-faq" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Medical Services</h3>
+                    <p>Doctor licenses, medical council</p>
+                    <span class="count">5 questions</span>
+                </a>
+                
+                <a href="#general-faq" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>General Questions</h3>
+                    <p>Process, pricing, timelines</p>
+                    <span class="count">15 questions</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section faq-accordion-section">
+        <div class="container">
+            <!-- Document Services FAQ -->
+            <div class="faq-category" id="document-faq">
+                <div class="category-header">
+                    <div class="category-title">
+                        <i class="fas fa-passport"></i>
+                        <h2>Document Services FAQ</h2>
+                    </div>
+                    <p>Questions about passport, Aadhaar, PAN, certificates, and attestation services</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does passport renewal take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Regular passport renewal typically takes 7-15 working days through Tatkal and 15-30 days through normal process. With our expedited service, we aim to complete it in 5-10 working days depending on document verification and police verification status.</p>
+                            <div class="additional-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span><strong>Normal:</strong> 15-30 days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-bolt"></i>
+                                    <span><strong>Tatkal:</strong> 7-15 days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-star"></i>
+                                    <span><strong>With us:</strong> 5-10 days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What documents do I need for Aadhaar update?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For Aadhaar updates, you need:</p>
+                            <ul>
+                                <li><strong>Proof of Identity:</strong> Passport, PAN card, Voter ID, Driving License</li>
+                                <li><strong>Proof of Address:</strong> Utility bill, bank statement, rental agreement</li>
+                                <li><strong>Proof of Date of Birth:</strong> Birth certificate, SSLC certificate</li>
+                                <li><strong>Current Aadhaar number</strong> and mobile number registered with Aadhaar</li>
+                            </ul>
+                            <p>We help verify your documents before submission to avoid rejections.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can you help with document attestation for foreign countries?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide complete document attestation services for all major countries including UAE, USA, UK, Canada, Australia, and European countries. Our process includes:</p>
+                            <ol>
+                                <li>Notary attestation</li>
+                                <li>Home Department/HRD attestation</li>
+                                <li>MEA (Ministry of External Affairs) attestation</li>
+                                <li>Embassy/Consulate attestation</li>
+                                <li>MOFA attestation (for Middle East countries)</li>
+                            </ol>
+                            <p>Processing time: 10-25 working days depending on the destination country.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Q4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is the difference between apostille and attestation?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Apostille</strong> is for Hague Convention countries (108 countries) and is a simplified certificate issued by MEA. <strong>Attestation</strong> is for non-Hague countries and involves embassy/consulate verification after MEA attestation.</p>
+                            <div class="comparison">
+                                <div class="comparison-item">
+                                    <h4>Apostille (Hague Countries)</h4>
+                                    <ul>
+                                        <li>Single certificate from MEA</li>
+                                        <li>Simplified process</li>
+                                        <li>108 member countries</li>
+                                        <li>Example: USA, UK, Australia</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-item">
+                                    <h4>Attestation (Non-Hague)</h4>
+                                    <ul>
+                                        <li>MEA + Embassy attestation</li>
+                                        <li>Longer process</li>
+                                        <li>All other countries</li>
+                                        <li>Example: UAE, Saudi Arabia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial Services FAQ -->
+            <div class="faq-category" id="financial-faq">
+                <div class="category-header">
+                    <div class="category-title">
+                        <i class="fas fa-university"></i>
+                        <h2>Financial Services FAQ</h2>
+                    </div>
+                    <p>Questions about banking, loans, GST registration, tax filing, and financial assistance</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does GST registration take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>GST registration typically takes 5-7 working days if all documents are in order. With our service, we aim to complete it in 3-5 working days by ensuring proper documentation and quick processing.</p>
+                            <div class="process-timeline">
+                                <div class="process-step">
+                                    <span class="step-number">1</span>
+                                    <span class="step-text">Document Collection (1 day)</span>
+                                </div>
+                                <div class="process-arrow">→</div>
+                                <div class="process-step">
+                                    <span class="step-number">2</span>
+                                    <span class="step-text">Application Filing (1 day)</span>
+                                </div>
+                                <div class="process-arrow">→</div>
+                                <div class="process-step">
+                                    <span class="step-number">3</span>
+                                    <span class="step-text">ARN Generation (1-3 days)</span>
+                                </div>
+                                <div class="process-arrow">→</div>
+                                <div class="process-step">
+                                    <span class="step-number">4</span>
+                                    <span class="step-text">GSTIN Issuance (1-2 days)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What documents are needed for company bank account opening?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For opening a company bank account, you need:</p>
+                            <div class="documents-list">
+                                <div class="doc-type">
+                                    <h4>Company Documents</h4>
+                                    <ul>
+                                        <li>Certificate of Incorporation</li>
+                                        <li>MOA & AOA</li>
+                                        <li>Board Resolution for account opening</li>
+                                        <li>PAN card of company</li>
+                                    </ul>
+                                </div>
+                                <div class="doc-type">
+                                    <h4>Director's Documents</h4>
+                                    <ul>
+                                        <li>PAN card of all directors</li>
+                                        <li>Aadhaar card of all directors</li>
+                                        <li>Address proof of all directors</li>
+                                        <li>Passport-size photographs</li>
+                                    </ul>
+                                </div>
+                                <div class="doc-type">
+                                    <h4>Business Proof</h4>
+                                    <ul>
+                                        <li>Business address proof</li>
+                                        <li>GST registration (if available)</li>
+                                        <li>Projected business plan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you help with income tax filing for individuals?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide complete income tax filing services for individuals, including:</p>
+                            <ul>
+                                <li><strong>ITR-1 (Sahaj):</strong> For salaried individuals with income from salary/pension, one house property, and other sources (excluding lottery winnings and race horses)</li>
+                                <li><strong>ITR-2:</strong> For individuals and HUFs not having income from profits and gains of business or profession</li>
+                                <li><strong>ITR-3:</strong> For individuals and HUFs having income from profits and gains of business or profession</li>
+                                <li><strong>ITR-4 (Sugam):</strong> For individuals, HUFs and Firms (other than LLP) having presumptive business income</li>
+                            </ul>
+                            <p>We also help with tax planning, investment proof submission, and refund tracking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Services FAQ -->
+            <div class="faq-category" id="company-faq">
+                <div class="category-header">
+                    <div class="category-title">
+                        <i class="fas fa-building"></i>
+                        <h2>Company Services FAQ</h2>
+                    </div>
+                    <p>Questions about company registration, compliance, licenses, and business setup</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is the difference between Private Limited, LLP, and Proprietorship?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="business-comparison">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Aspect</th>
+                                            <th>Private Limited</th>
+                                            <th>LLP</th>
+                                            <th>Proprietorship</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Legal Status</td>
+                                            <td>Separate legal entity</td>
+                                            <td>Separate legal entity</td>
+                                            <td>No separate entity</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Liability</td>
+                                            <td>Limited to shares</td>
+                                            <td>Limited to contribution</td>
+                                            <td>Unlimited liability</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Minimum Capital</td>
+                                            <td>No minimum</td>
+                                            <td>No minimum</td>
+                                            <td>No minimum</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Registration Time</td>
+                                            <td>10-15 days</td>
+                                            <td>10-15 days</td>
+                                            <td>7-10 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Compliance</td>
+                                            <td>High</td>
+                                            <td>Moderate</td>
+                                            <td>Low</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Best For</td>
+                                            <td>Startups seeking funding</td>
+                                            <td>Professional services</td>
+                                            <td>Small businesses</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What are the ongoing compliance requirements for a Private Limited company?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Private Limited companies have these annual compliance requirements:</p>
+                            <div class="compliance-grid">
+                                <div class="compliance-item">
+                                    <h4><i class="fas fa-calendar-alt"></i> Monthly</h4>
+                                    <ul>
+                                        <li>GST returns (if registered)</li>
+                                        <li>TDS/TCS returns</li>
+                                        <li>PF/ESI returns</li>
+                                    </ul>
+                                </div>
+                                <div class="compliance-item">
+                                    <h4><i class="fas fa-calendar"></i> Quarterly</h4>
+                                    <ul>
+                                        <li>Board meetings (min. 4 per year)</li>
+                                        <li>GSTR-3B & GSTR-1</li>
+                                        <li>TDS quarterly returns</li>
+                                    </ul>
+                                </div>
+                                <div class="compliance-item">
+                                    <h4><i class="fas fa-file-invoice"></i> Annual</h4>
+                                    <ul>
+                                        <li>Annual financial statements</li>
+                                        <li>Income tax return</li>
+                                        <li>MCA annual return (Form AOC-4 & MGT-7)</li>
+                                        <li>Audit report (if applicable)</li>
+                                    </ul>
+                                </div>
+                                <div class="compliance-item">
+                                    <h4><i class="fas fa-shield-alt"></i> Event-based</h4>
+                                    <ul>
+                                        <li>Change in directors</li>
+                                        <li>Change in registered office</li>
+                                        <li>Increase in share capital</li>
+                                        <li>Board resolutions filing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you provide MSME/Udyam registration services?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide complete MSME/Udyam registration services with these benefits:</p>
+                            <div class="benefits-list">
+                                <div class="benefit-item">
+                                    <i class="fas fa-percentage"></i>
+                                    <div>
+                                        <h4>Lower Interest Rates</h4>
+                                        <p>Subsidized interest rates on bank loans</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-file-invoice"></i>
+                                    <div>
+                                        <h4>Tax Benefits</h4>
+                                        <p>Various tax exemptions and rebates</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <div>
+                                        <h4>Government Tenders</h4>
+                                        <p>Eligibility for government tenders</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-credit-card"></i>
+                                    <div>
+                                        <h4>Credit Support</h4>
+                                        <p>Collateral-free loans under CGTMSE scheme</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Registration takes 1-2 working days and requires PAN, Aadhaar, and business details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Travel Services FAQ -->
+            <div class="faq-category" id="travel-faq">
+                <div class="category-header">
+                    <div class="category-title">
+                        <i class="fas fa-plane"></i>
+                        <h2>Travel Services FAQ</h2>
+                    </div>
+                    <p>Questions about visa processing, passport services, and travel bookings</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does US visa processing take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>US visa processing time varies by visa type:</p>
+                            <div class="timeline-info">
+                                <div class="time-item">
+                                    <h4>Visitor Visa (B1/B2)</h4>
+                                    <p><strong>Interview wait:</strong> 30-60 days</p>
+                                    <p><strong>Processing after interview:</strong> 3-5 working days</p>
+                                </div>
+                                <div class="time-item">
+                                    <h4>Student Visa (F1)</h4>
+                                    <p><strong>Interview wait:</strong> 30-45 days</p>
+                                    <p><strong>Processing after interview:</strong> 5-7 working days</p>
+                                </div>
+                                <div class="time-item">
+                                    <h4>Work Visa (H1B)</h4>
+                                    <p><strong>Processing time:</strong> 60-90 days</p>
+                                    <p><strong>Premium processing:</strong> 15 calendar days (additional fee)</p>
+                                </div>
+                            </div>
+                            <p class="note">Note: These are average times and can vary based on embassy workload and individual cases.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What documents are needed for Schengen visa?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Schengen visa requires these documents:</p>
+                            <div class="document-checklist">
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Completed visa application form</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Valid passport (6 months validity)</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Passport-size photographs (2)</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Travel insurance (minimum €30,000 coverage)</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Flight itinerary (round trip)</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Hotel reservations</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Proof of financial means (bank statements)</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Proof of employment/student status</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <label>Cover letter explaining purpose of visit</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General FAQ -->
+            <div class="faq-category" id="general-faq">
+                <div class="category-header">
+                    <div class="category-title">
+                        <i class="fas fa-cogs"></i>
+                        <h2>General Questions</h2>
+                    </div>
+                    <p>General questions about our services, process, pricing, and policies</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your service process?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our service process follows these 5 systematic steps:</p>
+                            <div class="process-steps">
+                                <div class="process-step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Initial Consultation</h4>
+                                        <p>We understand your requirements and provide service recommendations</p>
+                                    </div>
+                                </div>
+                                <div class="process-step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Document Collection</h4>
+                                        <p>We guide you on required documents and collect them securely</p>
+                                    </div>
+                                </div>
+                                <div class="process-step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Processing</h4>
+                                        <p>Our experts handle all paperwork and submissions</p>
+                                    </div>
+                                </div>
+                                <div class="process-step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Tracking & Updates</h4>
+                                        <p>We track your application and provide regular updates</p>
+                                    </div>
+                                </div>
+                                <div class="process-step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Delivery</h4>
+                                        <p>We deliver completed work with proper documentation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How are your service charges calculated?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our service charges are based on these factors:</p>
+                            <div class="pricing-factors">
+                                <div class="factor">
+                                    <h4><i class="fas fa-tasks"></i> Service Complexity</h4>
+                                    <p>Simple services (document pickup) cost less than complex services (company registration)</p>
+                                </div>
+                                <div class="factor">
+                                    <h4><i class="fas fa-clock"></i> Processing Time</h4>
+                                    <p>Urgent services may have additional charges for expedited processing</p>
+                                </div>
+                                <div class="factor">
+                                    <h4><i class="fas fa-file-alt"></i> Documentation</h4>
+                                    <p>Services requiring extensive documentation or verification may cost more</p>
+                                </div>
+                                <div class="factor">
+                                    <h4><i class="fas fa-handshake"></i> Additional Services</h4>
+                                    <p>Pickup/delivery, follow-ups, and special requests may have additional charges</p>
+                                </div>
+                            </div>
+                            <p class="note">We provide transparent quotes before starting any service. Government/statutory fees are charged separately at actuals.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you provide pickup and delivery of documents?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide document pickup and delivery services within Bengaluru for your convenience. This service includes:</p>
+                            <ul>
+                                <li><strong>Pickup Service:</strong> We collect documents from your home or office</li>
+                                <li><strong>Secure Handling:</strong> Documents are handled with care and confidentiality</li>
+                                <li><strong>Delivery:</strong> Completed work delivered to your preferred location</li>
+                                <li><strong>Tracking:</strong> Real-time updates on document status</li>
+                                <li><strong>Charges:</strong> Nominal additional charges based on location</li>
+                            </ul>
+                            <p>This service is especially useful for busy professionals, elderly clients, and those with mobility issues.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Q4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens if my application gets rejected?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>In case of application rejection:</p>
+                            <div class="rejection-process">
+                                <div class="rejection-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Analysis</h4>
+                                        <p>We analyze the rejection reason and identify issues</p>
+                                    </div>
+                                </div>
+                                <div class="rejection-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Correction</h4>
+                                        <p>We help you correct the identified issues</p>
+                                    </div>
+                                </div>
+                                <div class="rejection-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-redo"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Resubmission</h4>
+                                        <p>We resubmit the corrected application</p>
+                                    </div>
+                                </div>
+                                <div class="rejection-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Follow-up</h4>
+                                        <p>We follow up with authorities for faster processing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="note">We don't charge additional service fees for resubmission due to our errors. Only government fees (if any) need to be paid again.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Q5 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What are your working hours?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our working hours are:</p>
+                            <div class="timing-details">
+                                <div class="timing-item">
+                                    <i class="fas fa-calendar-day"></i>
+                                    <div>
+                                        <h4>Monday - Saturday</h4>
+                                        <p>9:30 AM to 7:00 PM</p>
+                                    </div>
+                                </div>
+                                <div class="timing-item">
+                                    <i class="fas fa-calendar-day"></i>
+                                    <div>
+                                        <h4>Sunday</h4>
+                                        <p>10:00 AM to 2:00 PM (For urgent services only)</p>
+                                    </div>
+                                </div>
+                                <div class="timing-item">
+                                    <i class="fas fa-headset"></i>
+                                    <div>
+                                        <h4>Emergency Support</h4>
+                                        <p>Available via WhatsApp 24/7 for urgent queries</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>We recommend calling ahead for complex services to ensure our experts are available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ask Question Section -->
+    <section class="section ask-question" id="ask-question">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-question"></i> Still Have Questions?</h2>
+                <p>Can't find the answer you're looking for? Ask us directly.</p>
+            </div>
+            
+            <div class="ask-form-container">
+                <div class="form-intro">
+                    <h3>Ask Your Question</h3>
+                    <p>We typically respond within 2 hours during business hours. For urgent queries, please call us directly.</p>
+                    <div class="response-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Within 2 hours (Mon-Sat, 9:30 AM - 7:00 PM)</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4>Urgent Questions</h4>
+                                <p>Call +91-98866 93316 for immediate assistance</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-comment-dots"></i>
+                            <div>
+                                <h4>Preferred Channel</h4>
+                                <p>WhatsApp for quick responses with document sharing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="ask-question-form" id="askQuestionForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="questionName"><i class="fas fa-user"></i> Your Name *</label>
+                            <input type="text" id="questionName" name="questionName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="questionPhone"><i class="fas fa-phone"></i> Phone Number *</label>
+                            <input type="tel" id="questionPhone" name="questionPhone" placeholder="Enter your 10-digit mobile number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="questionEmail"><i class="fas fa-envelope"></i> Email Address (Optional)</label>
+                        <input type="email" id="questionEmail" name="questionEmail" placeholder="Enter your email for detailed response">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="questionCategory"><i class="fas fa-folder"></i> Question Category *</label>
+                        <select id="questionCategory" name="questionCategory" required>
+                            <option value="">Select a category</option>
+                            <option value="document">Document Services</option>
+                            <option value="financial">Financial Services</option>
+                            <option value="company">Company Registration</option>
+                            <option value="travel">Travel Services</option>
+                            <option value="medical">Medical Services</option>
+                            <option value="general">General Questions</option>
+                            <option value="other">Other Services</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="questionText"><i class="fas fa-question-circle"></i> Your Question *</label>
+                        <textarea id="questionText" name="questionText" rows="4" placeholder="Please describe your question in detail. Include any specific requirements or documents involved." required></textarea>
+                        <div class="char-count">
+                            <span id="questionCharCount">0</span> / 500 characters
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Submit Question
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i> By submitting, you agree to our <a href="privacy-policy.html">Privacy Policy</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="quick-contact-options">
+                <h3>Other Ways to Get Answers</h3>
+                <div class="contact-cards">
+                    <a href="tel:+919886693316" class="contact-option">
+                        <div class="option-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="option-content">
+                            <h4>Call Us</h4>
+                            <p>+91-98866 93316</p>
+                            <span>Direct conversation for urgent queries</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://wa.me/919886693316" class="contact-option">
+                        <div class="option-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="option-content">
+                            <h4>WhatsApp</h4>
+                            <p>+91-98866 93316</p>
+                            <span>Quick responses with document sharing</span>
+                        </div>
+                    </a>
+                    
+                    <a href="contact.html" class="contact-option">
+                        <div class="option-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="option-content">
+                            <h4>Visit Office</h4>
+                            <p>Jayanagar 3rd Block</p>
+                            <span>In-person consultation for complex queries</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for all document and business services in Bengaluru. Clear answers, professional service.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="how-it-works.html"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="why-choose-us.html"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="faq.html" class="active"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Useful Pages</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="terms.html"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="services/document-assistance.html"><i class="fas fa-chevron-right"></i> Document Assistance</a></li>
+                        <li><a href="services/company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM<br>Sun: 10 AM - 2 PM (Urgent only)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-<span id="currentYear">2023</span> Ozone Service Solutions. All Rights Reserved. | Serving Bengaluru Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20have%20a%20question%20about%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Ask Question</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../script.js"></script>
+    <script src="../three-models.js"></script>
+    <script src="../assets/js/scroll-effects.js"></script>
+    
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // FAQ Search Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('faqSearch');
+            const searchBtn = document.getElementById('searchBtn');
+            const faqItems = document.querySelectorAll('.faq-item');
+            const categoryCards = document.querySelectorAll('.category-card');
+            
+            // Search functionality
+            function performSearch() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                
+                if (searchTerm === '') {
+                    // Show all FAQs if search is empty
+                    faqItems.forEach(item => {
+                        item.style.display = 'flex';
+                        item.parentElement.parentElement.style.display = 'block';
+                    });
+                    return;
+                }
+                
+                let foundResults = false;
+                
+                // Search through FAQ items
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'flex';
+                        item.parentElement.parentElement.style.display = 'block';
+                        foundResults = true;
+                        
+                        // Highlight the matching text
+                        highlightText(item, searchTerm);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                // Show/hide categories based on results
+                document.querySelectorAll('.faq-category').forEach(category => {
+                    const visibleItems = category.querySelectorAll('.faq-item[style*="display: flex"]');
+                    if (visibleItems.length === 0) {
+                        category.style.display = 'none';
+                    } else {
+                        category.style.display = 'block';
+                    }
+                });
+                
+                // Scroll to first result if found
+                if (foundResults) {
+                    const firstVisible = document.querySelector('.faq-item[style*="display: flex"]');
+                    if (firstVisible) {
+                        firstVisible.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+            }
+            
+            // Highlight search term in text
+            function highlightText(element, searchTerm) {
+                const question = element.querySelector('.faq-question h3');
+                const answer = element.querySelector('.faq-answer');
+                
+                // Remove previous highlights
+                question.innerHTML = question.textContent;
+                answer.innerHTML = answer.textContent;
+                
+                // Highlight in question
+                if (question.textContent.toLowerCase().includes(searchTerm)) {
+                    const regex = new RegExp(`(${searchTerm})`, 'gi');
+                    question.innerHTML = question.textContent.replace(regex, '<span class="highlight-text">$1</span>');
+                }
+                
+                // Highlight in answer
+                if (answer.textContent.toLowerCase().includes(searchTerm)) {
+                    const regex = new RegExp(`(${searchTerm})`, 'gi');
+                    answer.innerHTML = answer.textContent.replace(regex, '<span class="highlight-text">$1</span>');
+                }
+            }
+            
+            // Event listeners for search
+            searchBtn.addEventListener('click', performSearch);
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            // Clear search when input is cleared
+            searchInput.addEventListener('input', function() {
+                if (this.value === '') {
+                    // Remove highlights
+                    document.querySelectorAll('.highlight-text').forEach(span => {
+                        span.outerHTML = span.innerHTML;
+                    });
+                    
+                    // Show all FAQs
+                    faqItems.forEach(item => {
+                        item.style.display = 'flex';
+                    });
+                    
+                    document.querySelectorAll('.faq-category').forEach(category => {
+                        category.style.display = 'block';
+                    });
+                }
+            });
+            
+            // FAQ Accordion functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle active class
+                    this.parentElement.classList.toggle('active');
+                    
+                    // Toggle icon
+                    if (this.parentElement.classList.contains('active')) {
+                        icon.className = 'fas fa-chevron-up';
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        answer.style.paddingTop = '1.5rem';
+                    } else {
+                        icon.className = 'fas fa-chevron-down';
+                        answer.style.maxHeight = null;
+                        answer.style.paddingTop = null;
+                    }
+                    
+                    // Close other FAQs in the same category
+                    const parentCategory = this.closest('.faq-accordion');
+                    const otherQuestions = parentCategory.querySelectorAll('.faq-question');
+                    otherQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== this) {
+                            otherQuestion.parentElement.classList.remove('active');
+                            otherQuestion.querySelector('i').className = 'fas fa-chevron-down';
+                            otherQuestion.nextElementSibling.style.maxHeight = null;
+                            otherQuestion.nextElementSibling.style.paddingTop = null;
+                        }
+                    });
+                });
+            });
+            
+            // Category card click smooth scrolling
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Open first FAQ in the category
+                        const firstFaq = targetElement.querySelector('.faq-item');
+                        if (firstFaq) {
+                            firstFaq.classList.add('active');
+                            firstFaq.querySelector('.faq-question i').className = 'fas fa-chevron-up';
+                            firstFaq.querySelector('.faq-answer').style.maxHeight = 
+                                firstFaq.querySelector('.faq-answer').scrollHeight + 'px';
+                            firstFaq.querySelector('.faq-answer').style.paddingTop = '1.5rem';
+                        }
+                        
+                        // Scroll to category
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Ask question form character count
+            const questionText = document.getElementById('questionText');
+            const charCount = document.getElementById('questionCharCount');
+            
+            questionText.addEventListener('input', function() {
+                const length = this.value.length;
+                charCount.textContent = length;
+                
+                if (length > 500) {
+                    this.value = this.value.substring(0, 500);
+                    charCount.textContent = 500;
+                }
+            });
+            
+            // Ask question form submission
+            document.getElementById('askQuestionForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('questionName').value;
+                const phone = document.getElementById('questionPhone').value;
+                const category = document.getElementById('questionCategory').value;
+                const question = document.getElementById('questionText').value;
+                
+                // Create WhatsApp message
+                const whatsappMessage = `New Question from FAQ Page:%0A%0AName: ${name}%0APhone: ${phone}%0ACategory: ${category}%0AQuestion: ${question.substring(0, 100)}...`;
+                
+                // Open WhatsApp
+                window.open(`https://wa.me/919886693316?text=${whatsappMessage}`, '_blank');
+                
+                // Reset form
+                this.reset();
+                charCount.textContent = '0';
+                
+                // Show success message
+                alert('Thank you for your question! We\'ll respond within 2 hours via WhatsApp.');
+            });
+            
+            // Popular search tags
+            document.querySelectorAll('.search-tag').forEach(tag => {
+                tag.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const searchTerm = this.textContent.toLowerCase();
+                    searchInput.value = searchTerm;
+                    performSearch();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

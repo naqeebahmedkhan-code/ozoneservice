@@ -1,0 +1,47 @@
+ozone-service-solutions/
+│
+├── index.html
+├── style.css
+├── script.js
+├── three-models.js
+├── robots.txt
+├── sitemap.xml
+│
+├── assets/
+│   ├── css/
+│   │   ├── animations.css
+│   │   └── responsive.css
+│   │
+│   ├── js/
+│   │   ├── form-validator.js
+│   │   ├── scroll-effects.js
+│   │   ├── counter-animation.js
+│   │   └── service-quote.js
+│   │
+│   └── images/
+│       ├── logo/
+│       └── services/
+│
+├── pages/
+│   ├── about.html
+│   ├── how-it-works.html
+│   ├── why-choose-us.html
+│   ├── testimonials.html
+│   ├── contact.html
+│   ├── faq.html
+│   └── services/
+│       ├── document-assistance.html
+│       ├── financial-assistance.html
+│       ├── travel-assistance.html
+│       ├── company-registration.html
+│       ├── doctors-assistance.html
+│       ├── recharge-utility.html
+│       ├── gst-tax-filing.html
+│       ├── passport-visa.html
+│       ├── medical-licenses.html
+│       └── attestation-services.html
+│
+└── includes/
+    ├── header.html
+    ├── footer.html
+    └── whatsapp-widget.html

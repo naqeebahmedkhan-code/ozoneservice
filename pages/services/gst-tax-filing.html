@@ -1,0 +1,733 @@
+[file name]: pages/services/gst-tax-filing.html
+[file content begin]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Registration & Tax Filing Services | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="Professional GST registration, GST return filing, Income Tax filing, TDS return, and all tax compliance services in Bengaluru since 2006.">
+    <meta name="keywords" content="GST registration Bangalore, GST return filing, Income Tax filing, tax consultant Bengaluru, tax compliance services">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#" class="active"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="gst-tax-filing.html" class="active"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                            <a href="recharge-utility.html"><i class="fas fa-mobile-alt"></i> Recharge & Utility</a>
+                        </div>
+                    </div>
+                    <a href="../how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="../why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="../testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="../contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero tax-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-file-invoice-dollar"></i> Tax Solutions</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Professional <span class="highlight">GST & Tax Filing</span> Services
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Expert GST registration, GST return filing, Income Tax filing, and complete tax compliance services 
+                    for businesses and individuals in Bengaluru. Stay compliant with our professional tax assistance.
+                </p>
+                
+                <div class="service-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Compliance</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-clock"></i>
+                        <span>Timely Filing</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-headset"></i>
+                        <span>Tax Expert Support</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hello%20Ozone%20Service%20Solutions!%20I%20need%20GST%2FTax%20assistance%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Tax Consultation
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call Tax Expert
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 3D Tax Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="tax-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="section service-details">
+        <div class="container">
+            <div class="service-detail-content">
+                <div class="service-description">
+                    <h2>Comprehensive Tax Solutions</h2>
+                    <p>Ozone Service Solutions offers complete GST and Income Tax filing services for businesses, 
+                    professionals, and individuals. With 18+ years of experience, we ensure accurate, timely, and 
+                    compliant tax filings to help you avoid penalties and maximize benefits.</p>
+                    
+                    <h3>Our GST Services</h3>
+                    
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>GST Registration</h4>
+                                <p>New GST registration for businesses, professionals, and e-commerce sellers. 
+                                Regular, composition, and casual taxable person registrations.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> New GSTIN Registration</li>
+                                    <li><i class="fas fa-check-circle"></i> Composition Scheme Registration</li>
+                                    <li><i class="fas fa-check-circle"></i> GST Amendment Services</li>
+                                    <li><i class="fas fa-check-circle"></i> Cancellation of GST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-file-upload"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>GST Return Filing</h4>
+                                <p>Monthly, quarterly, and annual GST return filing including GSTR-1, GSTR-3B, 
+                                GSTR-9, and GSTR-9C for audit cases.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> GSTR-1 (Monthly/Quarterly)</li>
+                                    <li><i class="fas fa-check-circle"></i> GSTR-3B (Monthly)</li>
+                                    <li><i class="fas fa-check-circle"></i> GSTR-9 (Annual Return)</li>
+                                    <li><i class="fas fa-check-circle"></i> GSTR-9C (Reconciliation)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>GST Refund Services</h4>
+                                <p>GST refund processing for exporters, inverted duty structure, 
+                                and excess tax payment cases.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Export Refunds</li>
+                                    <li><i class="fas fa-check-circle"></i> Inverted Duty Refunds</li>
+                                    <li><i class="fas fa-check-circle"></i> Excess Payment Refunds</li>
+                                    <li><i class="fas fa-check-circle"></i> Refund Follow-up</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>GST Compliance & Audit</h4>
+                                <p>GST compliance management, audit representation, 
+                                and notice handling services.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> GST Audit Assistance</li>
+                                    <li><i class="fas fa-check-circle"></i> Notice Response Handling</li>
+                                    <li><i class="fas fa-check-circle"></i> Departmental Communication</li>
+                                    <li><i class="fas fa-check-circle"></i> Compliance Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Income Tax Services</h3>
+                    
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Individual Tax Filing</h4>
+                                <p>Income Tax Return (ITR) filing for salaried individuals, 
+                                professionals, and freelancers with tax planning.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> ITR-1, ITR-2, ITR-3, ITR-4</li>
+                                    <li><i class="fas fa-check-circle"></i> Tax Saving Investments</li>
+                                    <li><i class="fas fa-check-circle"></i> Form 16 Processing</li>
+                                    <li><i class="fas fa-check-circle"></i> Tax Refund Assistance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Business Tax Filing</h4>
+                                <p>Corporate tax filing for companies, partnership firms, 
+                                LLPs, and proprietorship businesses.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Company Tax Returns</li>
+                                    <li><i class="fas fa-check-circle"></i> Partnership Firm Returns</li>
+                                    <li><i class="fas fa-check-circle"></i> Audit Report Preparation</li>
+                                    <li><i class="fas fa-check-circle"></i> Tax Audit Compliance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>TDS Return Filing</h4>
+                                <p>TDS return filing for businesses deducting tax at source, 
+                                including Form 24Q, 26Q, 27Q, and 27EQ.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Quarterly TDS Returns</li>
+                                    <li><i class="fas fa-check-circle"></i> TDS Certificate Issuance</li>
+                                    <li><i class="fas fa-check-circle"></i> TDS Corrections</li>
+                                    <li><i class="fas fa-check-circle"></i> TDS Payment Assistance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Tax Notice Handling</h4>
+                                <p>Professional handling of income tax notices, 
+                                scrutiny assessments, and departmental communications.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Notice Response Preparation</li>
+                                    <li><i class="fas fa-check-circle"></i> Assessment Representation</li>
+                                    <li><i class="fas fa-check-circle"></i> Appeal Filing</li>
+                                    <li><i class="fas fa-check-circle"></i> Tax Litigation Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-benefits">
+                    <h3>Why Choose Our Tax Services</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Expert Tax Professionals:</strong> Chartered Accountants and tax experts</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Timely Filing:</strong> Never miss deadlines or pay penalties</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Accuracy Guaranteed:</strong> Error-free tax calculations and filings</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Complete Compliance:</strong> All tax laws and regulations followed</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Tax Savings:</strong> Maximize deductions and exemptions</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Confidential Service:</strong> Secure handling of financial data</li>
+                    </ul>
+                    
+                    <div class="pricing-info">
+                        <h4><i class="fas fa-rupee-sign"></i> Service Packages</h4>
+                        <div class="price-card">
+                            <div class="price-item">
+                                <span>GST Registration</span>
+                                <span class="price">₹1,999</span>
+                            </div>
+                            <div class="price-item">
+                                <span>GST Return Filing (Monthly)</span>
+                                <span class="price">₹999/month</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Individual Tax Filing</span>
+                                <span class="price">₹1,499</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Business Tax Filing</span>
+                                <span class="price">From ₹4,999</span>
+                            </div>
+                            <div class="price-item">
+                                <span>TDS Return (Quarterly)</span>
+                                <span class="price">₹1,999/quarter</span>
+                            </div>
+                        </div>
+                        <p class="price-note">*Custom packages available for businesses. All inclusive of government fees.</p>
+                    </div>
+                    
+                    <div class="documents-required">
+                        <h4><i class="fas fa-file-alt"></i> Documents for GST Registration</h4>
+                        <ul>
+                            <li>PAN Card of Business/Individual</li>
+                            <li>Aadhaar Card of Proprietor/Partners/Directors</li>
+                            <li>Proof of Business Address</li>
+                            <li>Bank Account Details</li>
+                            <li>Digital Signature Certificate (DSC)</li>
+                            <li>Photographs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="urgency-box">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Urgent Tax Help?</h4>
+                        <p>Missed filing deadline? Tax notice received? We provide urgent assistance.</p>
+                        <a href="tel:+919886693316" class="btn btn-primary btn-small">
+                            <i class="fas fa-phone"></i> Emergency Tax Help
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GST Registration Process -->
+    <section class="section gst-process bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>GST Registration Process</h2>
+                <p>Simple 4-step process to get your GSTIN</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Document Collection</h3>
+                    <p>We collect and verify all required documents for GST registration.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Online Application</h3>
+                    <p>Fill and submit GST REG-01 form on GST portal with accurate details.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h3>ARN Generation</h3>
+                    <p>Application Reference Number (ARN) generated after successful submission.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>GSTIN Allotment</h3>
+                    <p>Receive GST Certificate with 15-digit GSTIN within 3-7 working days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tax Deadlines -->
+    <section class="section tax-deadlines">
+        <div class="container">
+            <div class="section-header">
+                <h2>Important Tax Deadlines</h2>
+                <p>Stay compliant with timely filings</p>
+            </div>
+            
+            <div class="deadlines-grid">
+                <div class="deadline-card">
+                    <h3><i class="fas fa-calendar-alt"></i> GST Deadlines</h3>
+                    <ul>
+                        <li><strong>GSTR-3B:</strong> 20th of following month</li>
+                        <li><strong>GSTR-1:</strong> 11th of following month</li>
+                        <li><strong>GSTR-9 (Annual):</strong> 31st December</li>
+                        <li><strong>GSTR-9C:</strong> 31st December</li>
+                    </ul>
+                </div>
+                
+                <div class="deadline-card">
+                    <h3><i class="fas fa-calendar-check"></i> Income Tax Deadlines</h3>
+                    <ul>
+                        <li><strong>Individual Returns:</strong> 31st July</li>
+                        <li><strong>Audit Cases:</strong> 31st October</li>
+                        <li><strong>Revised Returns:</strong> 31st December</li>
+                        <li><strong>Belated Returns:</strong> 31st December</li>
+                    </ul>
+                </div>
+                
+                <div class="deadline-card">
+                    <h3><i class="fas fa-calendar-times"></i> TDS Deadlines</h3>
+                    <ul>
+                        <li><strong>Quarter 1:</strong> 31st July</li>
+                        <li><strong>Quarter 2:</strong> 31st October</li>
+                        <li><strong>Quarter 3:</strong> 31st January</li>
+                        <li><strong>Quarter 4:</strong> 31st May</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="deadline-reminder">
+                <div class="reminder-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="reminder-content">
+                    <h3>Never Miss a Deadline Again!</h3>
+                    <p>Subscribe to our tax deadline reminder service. We'll notify you before important dates.</p>
+                </div>
+                <a href="https://wa.me/919886693316?text=I%20want%20to%20subscribe%20to%20tax%20deadline%20reminders" 
+                   class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Subscribe Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Tax Services -->
+    <section class="section additional-services bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Additional Tax Services</h2>
+                <p>Complete tax compliance solutions</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Tax Planning</h3>
+                    <p>Strategic tax planning to minimize tax liability and maximize savings within legal framework.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Tax Audit</h3>
+                    <p>Comprehensive tax audit services for businesses requiring mandatory audit under Income Tax Act.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-import"></i>
+                    </div>
+                    <h3>Import Export Code</h3>
+                    <p>IEC code registration and compliance for import-export businesses.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Startup Tax Benefits</h3>
+                    <p>Assistance in claiming tax benefits and exemptions available for startups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section tax-cta">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Get Professional Tax Assistance</h2>
+                <p>Contact our tax experts for accurate, timely, and compliant GST and Income Tax filing services.</p>
+                
+                <div class="cta-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Tax Helpline</h4>
+                                <p>+91 98866 93316</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email for Tax Queries</h4>
+                                <p>ozoneservicesolutions@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Tax Consultation Office</h4>
+                                <p>Jayanagar 3rd Block, Bengaluru</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-form">
+                        <h3>Quick Tax Inquiry</h3>
+                        <form id="taxInquiryForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">Select Service Needed</option>
+                                    <option>GST Registration</option>
+                                    <option>GST Return Filing</option>
+                                    <option>Income Tax Filing</option>
+                                    <option>TDS Return Filing</option>
+                                    <option>Tax Notice Assistance</option>
+                                    <option>Other Tax Service</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fab fa-whatsapp"></i> Send Tax Query
+                            </button>
+                        </form>
+                        
+                        <div class="form-note">
+                            <p><i class="fas fa-lock"></i> Your financial information is completely confidential</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tax FAQs -->
+    <section class="section tax-faqs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tax FAQs</h2>
+                <p>Common questions about GST and tax filing</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>1. Who needs GST registration?</h3>
+                    <p>Businesses with annual turnover exceeding ₹40 lakhs (₹20 lakhs for special category states), 
+                    e-commerce sellers, interstate suppliers, and those required under reverse charge mechanism.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>2. What are the penalties for late GST filing?</h3>
+                    <p>Late fee of ₹50 per day (₹25 CGST + ₹25 SGST) for each day of delay, 
+                    maximum ₹5,000. Interest @18% per annum on tax due.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>3. Can I file ITR myself or should I hire a professional?</h3>
+                    <p>While you can file yourself, professionals ensure accuracy, maximize deductions, 
+                    handle complex cases, and provide audit support if needed.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>4. How long does GST registration take?</h3>
+                    <p>Usually 3-7 working days after document submission, provided all documents are correct 
+                    and there are no queries from department.</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="../faq.html" class="btn btn-outline">
+                    <i class="fas fa-question-circle"></i> View All FAQs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Professional GST and tax filing services with expert guidance and 
+                        100% compliance guarantee in Bengaluru since 2006.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Tax Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="gst-tax-filing.html" class="active"><i class="fas fa-chevron-right"></i> GST Registration</a></li>
+                        <li><a href="gst-return-filing.html"><i class="fas fa-chevron-right"></i> GST Return Filing</a></li>
+                        <li><a href="income-tax-filing.html"><i class="fas fa-chevron-right"></i> Income Tax Filing</a></li>
+                        <li><a href="tds-return-filing.html"><i class="fas fa-chevron-right"></i> TDS Return Filing</a></li>
+                        <li><a href="tax-audit-services.html"><i class="fas fa-chevron-right"></i> Tax Audit Services</a></li>
+                        <li><a href="tax-notice-handling.html"><i class="fas fa-chevron-right"></i> Tax Notice Handling</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Business Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                        <li><a href="msme-registration.html"><i class="fas fa-chevron-right"></i> MSME Registration</a></li>
+                        <li><a href="import-export-code.html"><i class="fas fa-chevron-right"></i> Import Export Code</a></li>
+                        <li><a href="trademark-registration.html"><i class="fas fa-chevron-right"></i> Trademark Registration</a></li>
+                        <li><a href="fssai-license.html"><i class="fas fa-chevron-right"></i> FSSAI License</a></li>
+                        <li><a href="business-compliance.html"><i class="fas fa-chevron-right"></i> Business Compliance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM<br>Sun: 10:00 AM - 2:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-2023 Ozone Service Solutions. All Rights Reserved. | Tax Services Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hello%20Ozone%20Service%20Solutions!%20I%20need%20GST%2FTax%20assistance%20for%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Tax Help</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../../script.js"></script>
+    <script src="../../three-models.js"></script>
+    <script src="../../assets/js/scroll-effects.js"></script>
+    <script src="../../assets/js/counter-animation.js"></script>
+    <script src="../../assets/js/form-validator.js"></script>
+    
+    <script>
+        // Tax inquiry form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize 3D scene
+            if (typeof ThreeDModels !== 'undefined') {
+                const threeD = new ThreeDModels();
+            }
+            
+            // Tax inquiry form
+            const taxForm = document.getElementById('taxInquiryForm');
+            if (taxForm) {
+                taxForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = this.querySelector('input[type="text"]').value;
+                    const phone = this.querySelector('input[type="tel"]').value;
+                    const service = this.querySelector('select').value;
+                    
+                    const message = `Tax Service Inquiry%0A%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0A%0APlease assist with tax filing.`;
+                    
+                    window.open(`https://wa.me/919886693316?text=${message}`, '_blank');
+                });
+            }
+            
+            // Update current year in footer
+            document.getElementById('currentYear')?.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+[file content end]

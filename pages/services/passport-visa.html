@@ -1,0 +1,822 @@
+[file name]: pages/services/passport-visa.html
+[file content begin]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport & Visa Services | Ozone Service Solutions | Bengaluru Since 2006</title>
+    <meta name="description" content="Professional passport and visa services in Bengaluru. Passport application, renewal, visa processing for all countries, attestation, PCC, and travel documentation since 2006.">
+    <meta name="keywords" content="passport services Bangalore, visa processing Bengaluru, passport renewal, PCC police clearance, document attestation, travel documentation">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#" class="active"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="passport-visa.html" class="active"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                            <a href="recharge-utility.html"><i class="fas fa-mobile-alt"></i> Recharge & Utility</a>
+                        </div>
+                    </div>
+                    <a href="../how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="../why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="../testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="../contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero passport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-globe"></i> Global Travel</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Professional <span class="highlight">Passport & Visa</span> Services
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Complete passport and visa processing services in Bengaluru. From passport application and renewal 
+                    to visa processing for all countries, we handle all your travel documentation needs since 2006.
+                </p>
+                
+                <div class="service-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-bolt"></i>
+                        <span>Tatkal Services</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Processing</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-headset"></i>
+                        <span>Expert Guidance</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hello%20Ozone%20Service%20Solutions!%20I%20need%20Passport%2FVisa%20assistance%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Passport/Visa Query
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call Travel Expert
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 3D Passport Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="passport-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="section service-details">
+        <div class="container">
+            <div class="service-detail-content">
+                <div class="service-description">
+                    <h2>Complete Passport & Visa Solutions</h2>
+                    <p>Ozone Service Solutions offers comprehensive passport and visa services for all your international 
+                    travel needs. With 18+ years of experience, we handle everything from new passport applications to 
+                    complex visa processing for business, tourism, study, and work purposes.</p>
+                    
+                    <h3>Our Passport Services</h3>
+                    
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>New Passport Application</h4>
+                                <p>Fresh passport application for adults and minors. Complete documentation 
+                                and appointment booking assistance.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Online Form Filling (PSK)</li>
+                                    <li><i class="fas fa-check-circle"></i> Document Verification</li>
+                                    <li><i class="fas fa-check-circle"></i> Police Verification Follow-up</li>
+                                    <li><i class="fas fa-check-circle"></i> Passport Delivery</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Passport Renewal</h4>
+                                <p>Passport renewal for expiring or expired passports. 
+                                Both normal and tatkal renewal services available.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Normal Renewal</li>
+                                    <li><i class="fas fa-check-circle"></i> Tatkal Renewal</li>
+                                    <li><i class="fas fa-check-circle"></i> Change of Address</li>
+                                    <li><i class="fas fa-check-circle"></i> Additional Booklet</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Passport Correction</h4>
+                                <p>Correction services for name, date of birth, address, 
+                                and other details in passport.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Name Correction</li>
+                                    <li><i class="fas fa-check-circle"></i> DOB Correction</li>
+                                    <li><i class="fas fa-check-circle"></i> Address Change</li>
+                                    <li><i class="fas fa-check-circle"></i> Spouse Name Addition</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Police Clearance Certificate</h4>
+                                <p>PCC application for employment, immigration, 
+                                and visa purposes.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Indian PCC</li>
+                                    <li><i class="fas fa-check-circle"></i> Foreign PCC</li>
+                                    <li><i class="fas fa-check-circle"></i> Employment PCC</li>
+                                    <li><i class="fas fa-check-circle"></i> Immigration PCC</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Lost/Damaged Passport</h4>
+                                <p>Assistance for lost, stolen, or damaged passport cases. 
+                                Complete reissue process handling.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> FIR Filing Assistance</li>
+                                    <li><i class="fas fa-check-circle"></i> Affidavit Preparation</li>
+                                    <li><i class="fas fa-check-circle"></i> Newspaper Advertisement</li>
+                                    <li><i class="fas fa-check-circle"></i> Emergency Certificate</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Minor Passport</h4>
+                                <p>Passport services for children below 18 years, 
+                                including first-time application and renewal.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> First Passport for Minors</li>
+                                    <li><i class="fas fa-check-circle"></i> Minor to Adult Conversion</li>
+                                    <li><i class="fas fa-check-circle"></i> Parental Consent Documents</li>
+                                    <li><i class="fas fa-check-circle"></i> School Bonafide Certificate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Visa Processing Services</h3>
+                    
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Tourist Visa</h4>
+                                <p>Tourist visa processing for popular destinations 
+                                including USA, UK, Europe, Australia, and more.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> USA Tourist Visa (B2)</li>
+                                    <li><i class="fas fa-check-circle"></i> UK Tourist Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Schengen Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Australia Tourist Visa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Business Visa</h4>
+                                <p>Business visa processing for meetings, conferences, 
+                                and business visits abroad.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> USA Business Visa (B1)</li>
+                                    <li><i class="fas fa-check-circle"></i> UK Business Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Europe Business Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> China Business Visa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Student Visa</h4>
+                                <p>Student visa assistance for study abroad programs, 
+                                including documentation and interview preparation.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> USA Student Visa (F1)</li>
+                                    <li><i class="fas fa-check-circle"></i> UK Student Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Canada Study Permit</li>
+                                    <li><i class="fas fa-check-circle"></i> Australia Student Visa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Work Visa</h4>
+                                <p>Work visa processing for employment opportunities 
+                                in foreign countries.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> USA H1B Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> UK Work Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Canada Work Permit</li>
+                                    <li><i class="fas fa-check-circle"></i> Australia Work Visa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Transit Visa</h4>
+                                <p>Transit visa processing for connecting flights 
+                                through different countries.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> USA Transit Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> UK Transit Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Singapore Transit Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Dubai Transit Visa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Visit/Spouse Visa</h4>
+                                <p>Family visit and spouse visa processing 
+                                for family reunification.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Family Visit Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Spouse Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Dependent Visa</li>
+                                    <li><i class="fas fa-check-circle"></i> Parent Visa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-benefits">
+                    <h3>Why Choose Our Passport & Visa Services</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>18+ Years Experience:</strong> Serving Bengaluru since 2006</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Expert Guidance:</strong> Step-by-step assistance</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Tatkal Services:</strong> Urgent passport processing</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>High Success Rate:</strong> 98% visa approval rate</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Document Verification:</strong> Complete document check</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Interview Preparation:</strong> Mock interviews for visa</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Transparent Pricing:</strong> No hidden charges</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Track Progress:</strong> Regular updates on application</li>
+                    </ul>
+                    
+                    <div class="pricing-info">
+                        <h4><i class="fas fa-rupee-sign"></i> Service Charges</h4>
+                        <div class="price-card">
+                            <div class="price-item">
+                                <span>New Passport (Normal)</span>
+                                <span class="price">₹1,999</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Passport Renewal (Normal)</span>
+                                <span class="price">₹1,499</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Passport Tatkal</span>
+                                <span class="price">₹3,999</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Police Clearance Certificate</span>
+                                <span class="price">₹1,999</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Visa Processing (Basic)</span>
+                                <span class="price">From ₹2,999</span>
+                            </div>
+                        </div>
+                        <p class="price-note">*Exclusive of government fees. Visa charges vary by country.</p>
+                    </div>
+                    
+                    <div class="documents-required">
+                        <h4><i class="fas fa-file-alt"></i> Basic Documents Required</h4>
+                        <ul>
+                            <li>Aadhaar Card</li>
+                            <li>PAN Card</li>
+                            <li>Birth Certificate</li>
+                            <li>Address Proof</li>
+                            <li>Passport Size Photographs</li>
+                            <li>Old Passport (if any)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="urgent-service">
+                        <div class="urgent-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="urgent-content">
+                            <h4>Urgent Passport Service?</h4>
+                            <p>Need passport in 2-3 days? We provide Tatkal passport services.</p>
+                        </div>
+                        <a href="tel:+919886693316" class="btn btn-primary btn-small">
+                            <i class="fas fa-phone"></i> Call for Tatkal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passport Process -->
+    <section class="section passport-process bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Passport Application Process</h2>
+                <p>Simple 5-step process to get your passport</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Document Verification</h3>
+                    <p>We verify all your documents and prepare the checklist.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Online Application</h3>
+                    <p>Fill passport application form and book PSK appointment.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>PSK Visit</h3>
+                    <p>Assistance with Passport Seva Kendra visit and formalities.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Police Verification</h3>
+                    <p>Follow-up for police verification and clearance.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Passport Delivery</h3>
+                    <p>Track and receive your passport at your address.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Processing Countries -->
+    <section class="section visa-countries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visa Processing for Popular Countries</h2>
+                <p>We process visas for destinations worldwide</p>
+            </div>
+            
+            <div class="countries-grid">
+                <div class="country-card">
+                    <div class="country-flag">
+                        <i class="fas fa-flag-usa"></i>
+                    </div>
+                    <h3>United States</h3>
+                    <p>B1/B2, F1, H1B, L1, J1 visas with interview preparation.</p>
+                </div>
+                
+                <div class="country-card">
+                    <div class="country-flag">
+                        <i class="fas fa-flag-uk"></i>
+                    </div>
+                    <h3>United Kingdom</h3>
+                    <p>Tourist, Business, Student, Work, and Family visas.</p>
+                </div>
+                
+                <div class="country-card">
+                    <div class="country-flag">
+                        <i class="fas fa-flag-eu"></i>
+                    </div>
+                    <h3>Schengen Europe</h3>
+                    <p>Single/Multiple entry visas for 26 European countries.</p>
+                </div>
+                
+                <div class="country-card">
+                    <div class="country-flag">
+                        <i class="fas fa-flag-canada"></i>
+                    </div>
+                    <h3>Canada</h3>
+                    <p>Visitor visa, Study Permit, Work Permit, PR assistance.</p>
+                </div>
+                
+                <div class="country-card">
+                    <div class="country-flag">
+                        <i class="fas fa-flag-australia"></i>
+                    </div>
+                    <h3>Australia</h3>
+                    <p>Tourist, Student, Work, Business, and Partner visas.</p>
+                </div>
+                
+                <div class="country-card">
+                    <div class="country-flag">
+                        <i class="fas fa-flag-asia"></i>
+                    </div>
+                    <h3>Asian Countries</h3>
+                    <p>Singapore, Malaysia, Thailand, Japan, China, Dubai visas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="section additional-services bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Additional Travel Services</h2>
+                <p>Complete travel documentation solutions</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stamp"></i>
+                    </div>
+                    <h3>Document Attestation</h3>
+                    <p>HRD, MEA, Embassy attestation for educational and personal documents.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Medical Certificate</h3>
+                    <p>Medical fitness certificates for visa and immigration purposes.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h3>Financial Documents</h3>
+                    <p>Bank statements, sponsorship letters, and financial proofs for visa.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane-ticket"></i>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <p>International travel insurance for visa and travel protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section passport-cta">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Need Passport or Visa Assistance?</h2>
+                <p>Contact our travel documentation experts for professional passport and visa services.</p>
+                
+                <div class="cta-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Travel Helpline</h4>
+                                <p>+91 98866 93316</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email for Travel Queries</h4>
+                                <p>ozoneservicesolutions@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Passport Office</h4>
+                                <p>Jayanagar 3rd Block, Bengaluru</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-form">
+                        <h3>Quick Travel Inquiry</h3>
+                        <form id="passportInquiryForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">Select Service Needed</option>
+                                    <option>New Passport</option>
+                                    <option>Passport Renewal</option>
+                                    <option>Passport Correction</option>
+                                    <option>USA Visa</option>
+                                    <option>UK Visa</option>
+                                    <option>Schengen Visa</option>
+                                    <option>Other Visa</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fab fa-whatsapp"></i> Send Travel Query
+                            </button>
+                        </form>
+                        
+                        <div class="form-note">
+                            <p><i class="fas fa-lock"></i> Your personal information is completely confidential</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel FAQs -->
+    <section class="section travel-faqs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Passport & Visa FAQs</h2>
+                <p>Common questions about travel documentation</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>1. How long does passport processing take?</h3>
+                    <p>Normal passport takes 15-30 days, Tatkal passport takes 2-3 working days 
+                    after police verification (if applicable).</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>2. What documents are needed for USA tourist visa?</h3>
+                    <p>Passport, DS-160 confirmation, appointment letter, photographs, 
+                    financial documents, employment proof, and travel itinerary.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>3. Can I apply for passport if I don't have birth certificate?</h3>
+                    <p>Yes, you can submit alternative documents like school leaving certificate, 
+                    PAN card, Aadhaar card, or affidavit in prescribed format.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>4. What is Police Clearance Certificate (PCC)?</h3>
+                    <p>PCC is a document issued by police verifying that applicant has no criminal 
+                    record. Required for employment, immigration, and long-term visas abroad.</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="../faq.html" class="btn btn-outline">
+                    <i class="fas fa-question-circle"></i> View All Travel FAQs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Professional passport and visa services with expert guidance 
+                        and high success rate in Bengaluru since 2006.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Travel Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="passport-visa.html" class="active"><i class="fas fa-chevron-right"></i> Passport Services</a></li>
+                        <li><a href="visa-processing.html"><i class="fas fa-chevron-right"></i> Visa Processing</a></li>
+                        <li><a href="document-attestation.html"><i class="fas fa-chevron-right"></i> Document Attestation</a></li>
+                        <li><a href="pcc-services.html"><i class="fas fa-chevron-right"></i> PCC Services</a></li>
+                        <li><a href="travel-insurance.html"><i class="fas fa-chevron-right"></i> Travel Insurance</a></li>
+                        <li><a href="flight-booking.html"><i class="fas fa-chevron-right"></i> Flight Booking</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Popular Visas</h4>
+                    <ul class="footer-links">
+                        <li><a href="usa-visa.html"><i class="fas fa-chevron-right"></i> USA Visa</a></li>
+                        <li><a href="uk-visa.html"><i class="fas fa-chevron-right"></i> UK Visa</a></li>
+                        <li><a href="schengen-visa.html"><i class="fas fa-chevron-right"></i> Schengen Visa</a></li>
+                        <li><a href="canada-visa.html"><i class="fas fa-chevron-right"></i> Canada Visa</a></li>
+                        <li><a href="australia-visa.html"><i class="fas fa-chevron-right"></i> Australia Visa</a></li>
+                        <li><a href="dubai-visa.html"><i class="fas fa-chevron-right"></i> Dubai Visa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM<br>Sun: 10:00 AM - 2:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-2023 Ozone Service Solutions. All Rights Reserved. | Travel Services Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hello%20Ozone%20Service%20Solutions!%20I%20need%20Passport%2FVisa%20assistance%20for%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Travel Help</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../../script.js"></script>
+    <script src="../../three-models.js"></script>
+    <script src="../../assets/js/scroll-effects.js"></script>
+    <script src="../../assets/js/counter-animation.js"></script>
+    <script src="../../assets/js/form-validator.js"></script>
+    
+    <script>
+        // Passport inquiry form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize 3D scene
+            if (typeof ThreeDModels !== 'undefined') {
+                const threeD = new ThreeDModels();
+            }
+            
+            // Passport inquiry form
+            const passportForm = document.getElementById('passportInquiryForm');
+            if (passportForm) {
+                passportForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = this.querySelector('input[type="text"]').value;
+                    const phone = this.querySelector('input[type="tel"]').value;
+                    const service = this.querySelector('select').value;
+                    
+                    const message = `Passport/Visa Inquiry%0A%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0A%0APlease assist with travel documentation.`;
+                    
+                    window.open(`https://wa.me/919886693316?text=${message}`, '_blank');
+                });
+            }
+            
+            // Update current year in footer
+            document.getElementById('currentYear')?.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
+[file content end]

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar & PAN Services | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="Professional Aadhaar & PAN card services in Bengaluru - New applications, corrections, updates, linking services. Expert assistance since 2006.">
+    <meta name="keywords" content="Aadhaar card Bangalore, PAN card services Bengaluru, Aadhaar update, PAN correction, UIDAI services, NSDL, Aadhaar PAN linking">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#" class="active"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="aadhaar-pan-services.html" class="active"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                            <a href="recharge-utility.html"><i class="fas fa-bolt"></i> Recharge & Utility</a>
+                        </div>
+                    </div>
+                    <a href="../how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="../why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="../testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="../contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-id-badge"></i> Identity Services</span>
+                </div>
+                <h1 class="hero-title">
+                    Professional <span class="highlight">Aadhaar & PAN</span> Services
+                </h1>
+                <p class="hero-subtitle">
+                    Complete assistance for Aadhaar card and PAN card applications, corrections, updates, and linking services. Get expert help for all your identity document needs.
+                </p>
+                <div class="service-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Processing</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-clock"></i>
+                        <span>Quick Service</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified Documents</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Aadhaar%20PAN%20Services%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Get Aadhaar/PAN Help
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                </div>
+            </div>
+            <!-- 3D ID Card Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="aadhaar-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="section service-details">
+        <div class="container">
+            <div class="service-detail-content">
+                <div class="service-description">
+                    <h2>Complete Aadhaar & PAN Card Services</h2>
+                    <p>Ozone Service Solutions provides expert assistance for all Aadhaar and PAN card related services. From new applications to corrections and updates, we handle everything with professional expertise and quick processing.</p>
+                    
+                    <div class="services-tabs">
+                        <div class="tabs">
+                            <button class="tab-link active" data-tab="aadhaar-tab">Aadhaar Services</button>
+                            <button class="tab-link" data-tab="pan-tab">PAN Services</button>
+                            <button class="tab-link" data-tab="linking-tab">Linking Services</button>
+                        </div>
+                        
+                        <!-- Aadhaar Services Tab -->
+                        <div id="aadhaar-tab" class="tab-content active">
+                            <h3>Aadhaar Card Services</h3>
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>New Aadhaar Enrollment</h4>
+                                        <p>Complete assistance for new Aadhaar card registration including document verification and biometric enrollment.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Aadhaar Update/Correction</h4>
+                                        <p>Name, date of birth, address, mobile number, email, and photo updates with proper documentation support.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-redo"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Aadhaar Reprint/Duplicate</h4>
+                                        <p>Get duplicate Aadhaar card if original is lost or damaged with secure online/offline processing.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-unlock-alt"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Aadhaar Lock/Unlock</h4>
+                                        <p>Assistance with locking and unlocking Aadhaar biometric authentication for security.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-qrcode"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>mAadhaar & e-Aadhaar</h4>
+                                        <p>Help with downloading e-Aadhaar and setting up mAadhaar mobile application.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-child"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Baal Aadhaar for Children</h4>
+                                        <p>Special assistance for Aadhaar enrollment of children below 5 years and 5-15 years age group.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- PAN Services Tab -->
+                        <div id="pan-tab" class="tab-content">
+                            <h3>PAN Card Services</h3>
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-file-signature"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>New PAN Application</h4>
+                                        <p>PAN card application for individuals, companies, firms, HUF, and other entities with NSDL/UTIITSL.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>PAN Correction/Changes</h4>
+                                        <p>Correction in name, date of birth, father's name, address, and photo updates.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-copy"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Duplicate PAN Card</h4>
+                                        <p>Get duplicate PAN card if original is lost, with quick reissuance process.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-building"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Company/Firm PAN</h4>
+                                        <p>PAN card for companies, partnership firms, LLPs, trusts, and other organizations.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>PAN Status Tracking</h4>
+                                        <p>Regular tracking of PAN application status and follow-up with authorities.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>NRI PAN Services</h4>
+                                        <p>PAN card services for Non-Resident Indians with proper documentation support.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Linking Services Tab -->
+                        <div id="linking-tab" class="tab-content">
+                            <h3>Aadhaar-PAN Linking Services</h3>
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Aadhaar-PAN Link/Update</h4>
+                                        <p>Assistance with linking Aadhaar with PAN card through online and offline methods.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-unlink"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Linking Issue Resolution</h4>
+                                        <p>Help with resolving issues in Aadhaar-PAN linking due to name mismatch or other errors.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Mobile/Bank Account Link</h4>
+                                        <p>Link Aadhaar with mobile number, bank accounts, and other government services.</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-item-icon">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <h4>Verification Services</h4>
+                                        <p>Verify Aadhaar and PAN details, get authentication certificates and verification reports.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-benefits">
+                    <h3>Why Choose Our Aadhaar/PAN Services</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <strong>Expert Assistance:</strong> 18+ years experience in document processing</li>
+                        <li><i class="fas fa-check"></i> <strong>Quick Processing:</strong> Faster than individual applications</li>
+                        <li><i class="fas fa-check"></i> <strong>Error-Free Applications:</strong> We verify all details before submission</li>
+                        <li><i class="fas fa-check"></i> <strong>Document Guidance:</strong> Help with all required documents</li>
+                        <li><i class="fas fa-check"></i> <strong>Follow-up Support:</strong> Regular tracking of application status</li>
+                        <li><i class="fas fa-check"></i> <strong>Home/Office Service:</strong> Optional pickup and delivery</li>
+                    </ul>
+                    
+                    <div class="document-checklist">
+                        <h4>Required Documents</h4>
+                        <div class="document-types">
+                            <div class="doc-type">
+                                <h5><i class="fas fa-user"></i> For Individuals</h5>
+                                <ul>
+                                    <li><i class="fas fa-file"></i> ID Proof (Passport/Voter ID/Driving License)</li>
+                                    <li><i class="fas fa-file"></i> Address Proof (Utility Bill/Rental Agreement)</li>
+                                    <li><i class="fas fa-file"></i> Date of Birth Proof</li>
+                                    <li><i class="fas fa-file"></i> Passport-size Photos</li>
+                                </ul>
+                            </div>
+                            <div class="doc-type">
+                                <h5><i class="fas fa-building"></i> For Companies</h5>
+                                <ul>
+                                    <li><i class="fas fa-file"></i> Certificate of Incorporation</li>
+                                    <li><i class="fas fa-file"></i> MOA & AOA</li>
+                                    <li><i class="fas fa-file"></i> Director's ID Proof</li>
+                                    <li><i class="fas fa-file"></i> Company Address Proof</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-info">
+                        <h4>Service Charges</h4>
+                        <div class="price-list">
+                            <div class="price-item">
+                                <span class="service-name">New Aadhaar</span>
+                                <span class="price">₹500-800</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">Aadhaar Update</span>
+                                <span class="price">₹400-700</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">New PAN Card</span>
+                                <span class="price">₹600-900</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="service-name">PAN Correction</span>
+                                <span class="price">₹500-800</span>
+                            </div>
+                        </div>
+                        <p><small>*Prices vary based on document requirements and service type</small></p>
+                        <a href="tel:+919886693316" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Get Exact Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="section process-section">
+        <div class="container">
+            <h2 class="section-title">Our Aadhaar/PAN Process</h2>
+            <p class="section-subtitle">Simple 4-step process for identity document services</p>
+            
+            <div class="process-timeline">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Document Consultation</h3>
+                        <p>We assess your requirement and guide you on required documents and procedures.</p>
+                    </div>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Document Collection</h3>
+                        <p>We collect and verify all required documents. Optional pickup service available.</p>
+                    </div>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Application Processing</h3>
+                        <p>Our experts handle the complete application process with proper authorities.</p>
+                    </div>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Delivery & Follow-up</h3>
+                        <p>We track your application and deliver the card/document to you when ready.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Aadhaar & PAN FAQs</h2>
+                <p>Common questions about identity document services</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How long does it take to get a new Aadhaar card?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Typically 15-30 days after biometric enrollment. We track the status regularly and update you.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I update my Aadhaar details online?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, for minor updates. However, major changes like name or date of birth require visiting Aadhaar center, which we can assist with.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is the deadline for Aadhaar-PAN linking?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While there have been multiple deadlines, it's mandatory for tax filing. We recommend linking immediately to avoid issues.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you provide home/office service for Aadhaar?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer document pickup and delivery service for Aadhaar/PAN applications at additional convenience charges.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What if my name differs in Aadhaar and PAN?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We help correct the name in either document to match and then proceed with linking. This is a common issue we resolve.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="../faq.html" class="btn btn-secondary">
+                    <i class="fas fa-question-circle"></i> View All FAQs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section service-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Need Aadhaar or PAN Assistance?</h2>
+                    <p>Contact our document experts for quick and reliable identity document services.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-98866 93316</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jayanagar 3rd Block, Bengaluru</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-action">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Aadhaar%20PAN%20Services%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp for Aadhaar/PAN
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Call for Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Professional Aadhaar & PAN card services with expert guidance and secure processing in Bengaluru.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="../how-it-works.html"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="../why-choose-us.html"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="../testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="../contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="document-assistance.html"><i class="fas fa-chevron-right"></i> Document Assistance</a></li>
+                        <li><a href="financial-assistance.html"><i class="fas fa-chevron-right"></i> Financial Assistance</a></li>
+                        <li><a href="travel-assistance.html"><i class="fas fa-chevron-right"></i> Travel Assistance</a></li>
+                        <li><a href="company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                        <li><a href="aadhaar-pan-services.html" class="active"><i class="fas fa-chevron-right"></i> Aadhaar & PAN Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-<span id="currentYear">2023</span> Ozone Service Solutions. All Rights Reserved. | Serving Bengaluru Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Aadhaar%20PAN%20Services%20for%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Aadhaar/PAN Help</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../../script.js"></script>
+    <script src="../../three-models.js"></script>
+    <script src="../../assets/js/scroll-effects.js"></script>
+    <script src="../../assets/js/form-validator.js"></script>
+    <script src="../../assets/js/service-quote.js"></script>
+    
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabLinks = document.querySelectorAll('.tab-link');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all tabs
+                    tabLinks.forEach(l => l.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // FAQ Accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle active class
+                    this.parentElement.classList.toggle('active');
+                    
+                    // Toggle icon
+                    if (this.parentElement.classList.contains('active')) {
+                        icon.className = 'fas fa-chevron-up';
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        icon.className = 'fas fa-chevron-down';
+                        answer.style.maxHeight = null;
+                    }
+                    
+                    // Close other FAQs
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== this) {
+                            otherQuestion.parentElement.classList.remove('active');
+                            otherQuestion.querySelector('i').className = 'fas fa-chevron-down';
+                            otherQuestion.nextElementSibling.style.maxHeight = null;
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Assistance Services | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="Complete travel assistance in Bengaluru - Flight bookings, visa processing, hotel reservations, tour packages, travel insurance. One-stop travel solutions since 2006.">
+    <meta name="keywords" content="travel assistance Bangalore, visa services Bengaluru, flight booking, hotel reservations, tour packages, travel insurance">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#" class="active"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="travel-assistance.html" class="active"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                        </div>
+                    </div>
+                    <a href="../how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="../why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="../testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="../contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-medal"></i> Travel Specialists</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Complete <span class="highlight">Travel Assistance</span> Services
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Your trusted partner for all travel needs - from visa processing to complete tour packages. 
+                    Experience hassle-free travel planning with our expert assistance.
+                </p>
+                
+                <div class="service-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-globe"></i>
+                        <span>Global Destinations</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Safe & Secure</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Travel%20Assistance%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Travel Consultation
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 3D Travel Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="travel-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="section service-details">
+        <div class="container">
+            <div class="service-detail-content">
+                <div class="service-description">
+                    <h2>Our Travel Services</h2>
+                    <p>Ozone Service Solutions provides comprehensive travel assistance for all your travel needs. From visa processing to complete tour packages, we ensure a seamless travel experience.</p>
+                    
+                    <h3>Our Travel Services Include:</h3>
+                    
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-stamp"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Visa Services</h4>
+                                <p>Complete visa processing for USA, UK, Schengen, Australia, Canada, and all other countries with expert guidance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Flight Bookings</h4>
+                                <p>Domestic and international flight bookings with best fares, group bookings, and last-minute reservations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Hotel Reservations</h4>
+                                <p>Luxury hotels, budget accommodations, resorts, and homestays worldwide with special corporate rates.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Tour Packages</h4>
+                                <p>Customized international and domestic tour packages including honeymoon, family, and adventure tours.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Travel Insurance</h4>
+                                <p>Comprehensive travel insurance for international and domestic travel with 24/7 emergency assistance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Forex Services</h4>
+                                <p>Foreign currency exchange, travel cards, and forex cards with best exchange rates and zero commission.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-benefits">
+                    <h3>Why Choose Our Travel Services</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <strong>Expert Travel Consultants:</strong> Years of experience in travel industry</li>
+                        <li><i class="fas fa-check"></i> <strong>Best Price Guarantee:</strong> Competitive rates on all services</li>
+                        <li><i class="fas fa-check"></i> <strong>Visa Success Rate:</strong> 95%+ visa approval rate</li>
+                        <li><i class="fas fa-check"></i> <strong>24/7 Support:</strong> Round-the-clock assistance during travel</li>
+                        <li><i class="fas fa-check"></i> <strong>Customized Itineraries:</strong> Tailored to your preferences and budget</li>
+                        <li><i class="fas fa-check"></i> <strong>Secure Transactions:</strong> Safe and protected payment options</li>
+                    </ul>
+                    
+                    <div class="pricing-info">
+                        <h4>Service Charges</h4>
+                        <p>Visa services start from ₹3,000. Flight and hotel bookings have no service fees. Tour packages are customized.</p>
+                        <a href="tel:+919886693316" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Get Travel Quote
+                        </a>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <p><strong>Planning your next trip?</strong></p>
+                        <a href="https://wa.me/919886693316" class="btn btn-whatsapp btn-small">
+                            <i class="fab fa-whatsapp"></i> Chat with Travel Expert
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="section destinations-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Our most requested travel destinations</p>
+            </div>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-icon">
+                        <i class="fas fa-flag-usa"></i>
+                    </div>
+                    <h3>USA</h3>
+                    <p>Tourist, Business, Student Visas</p>
+                    <div class="destination-details">
+                        <span><i class="fas fa-clock"></i> 15-20 Days</span>
+                        <span><i class="fas fa-rupee-sign"></i> From ₹15,000</span>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>UK</h3>
+                    <p>Tourist, Business, Visit Visas</p>
+                    <div class="destination-details">
+                        <span><i class="fas fa-clock"></i> 10-15 Days</span>
+                        <span><i class="fas fa-rupee-sign"></i> From ₹12,000</span>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3>Schengen</h3>
+                    <p>26 European Countries</p>
+                    <div class="destination-details">
+                        <span><i class="fas fa-clock"></i> 10-15 Days</span>
+                        <span><i class="fas fa-rupee-sign"></i> From ₹8,000</span>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-icon">
+                        <i class="fas fa-koala"></i>
+                    </div>
+                    <h3>Australia</h3>
+                    <p>Tourist, Business, PR</p>
+                    <div class="destination-details">
+                        <span><i class="fas fa-clock"></i> 15-25 Days</span>
+                        <span><i class="fas fa-rupee-sign"></i> From ₹10,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="section process-section">
+        <div class="container">
+            <h2 class="section-title">Our Travel Process</h2>
+            <p class="section-subtitle">Step-by-step travel assistance</p>
+            
+            <div class="process-timeline">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Travel Consultation</h3>
+                        <p>We understand your travel requirements, budget, and preferences to suggest suitable options.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Documentation</h3>
+                        <p>We guide you on required documents for visas and help with collection and verification.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Booking & Processing</h3>
+                        <p>We handle all bookings (flights, hotels, tours) and visa application processing.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Pre-departure & Support</h3>
+                        <p>We provide pre-departure briefing and 24/7 support during your travel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section service-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Ready to Travel?</h2>
+                    <p>Contact our travel experts for personalized travel solutions and best deals.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-98866 93316</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jayanagar 3rd Block, Bengaluru</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-action">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Travel%20Assistance%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Travel Expert
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Call for Travel Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Professional travel assistance with expert guidance and best deals in Bengaluru.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="../how-it-works.html"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="../why-choose-us.html"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="../testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="../contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="document-assistance.html"><i class="fas fa-chevron-right"></i> Document Assistance</a></li>
+                        <li><a href="financial-assistance.html"><i class="fas fa-chevron-right"></i> Financial Assistance</a></li>
+                        <li><a href="travel-assistance.html" class="active"><i class="fas fa-chevron-right"></i> Travel Assistance</a></li>
+                        <li><a href="company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                        <li><a href="doctors-assistance.html"><i class="fas fa-chevron-right"></i> Assistance to Doctors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-<span id="currentYear">2023</span> Ozone Service Solutions. All Rights Reserved. | Serving Bengaluru Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20need%20Travel%20Assistance%20for%3A" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Travel Help</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../../script.js"></script>
+    <script src="../../three-models.js"></script>
+    <script src="../../assets/js/scroll-effects.js"></script>
+    <script src="../../assets/js/counter-animation.js"></script>
+    <script src="../../assets/js/form-validator.js"></script>
+    
+    <script>
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

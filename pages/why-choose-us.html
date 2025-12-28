@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us | Ozone Service Solutions | Bengaluru</title>
+    <meta name="description" content="Discover why Ozone Service Solutions is Bengaluru's trusted service partner since 2006. Expertise, reliability, and customer-first approach.">
+    <meta name="keywords" content="why choose ozone services, trusted service provider Bangalore, reliable document assistance, professional service experts Bengaluru, since 2006">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Ozone Service</h1>
+                        <span>Solutions Since 2006</span>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-briefcase"></i> Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services/document-assistance.html"><i class="fas fa-passport"></i> Document Assistance</a>
+                            <a href="services/financial-assistance.html"><i class="fas fa-university"></i> Financial Assistance</a>
+                            <a href="services/travel-assistance.html"><i class="fas fa-plane"></i> Travel Assistance</a>
+                            <a href="services/company-registration.html"><i class="fas fa-building"></i> Company Registration</a>
+                            <a href="services/doctors-assistance.html"><i class="fas fa-user-md"></i> Doctors Assistance</a>
+                            <a href="services/gst-tax-filing.html"><i class="fas fa-file-invoice-dollar"></i> GST & Tax Filing</a>
+                            <a href="services/passport-visa.html"><i class="fas fa-globe"></i> Passport & Visa</a>
+                            <a href="services/medical-licenses.html"><i class="fas fa-stethoscope"></i> Medical Licenses</a>
+                            <a href="services/aadhaar-pan-services.html"><i class="fas fa-id-card"></i> Aadhaar & PAN</a>
+                            <a href="services/attestation-services.html"><i class="fas fa-stamp"></i> Attestation</a>
+                            <a href="services/recharge-utility.html"><i class="fas fa-bolt"></i> Recharge & Utility</a>
+                        </div>
+                    </div>
+                    <a href="how-it-works.html"><i class="fas fa-cogs"></i> How It Works</a>
+                    <a href="why-choose-us.html" class="active"><i class="fas fa-star"></i> Why Choose Us</a>
+                    <a href="testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                    <a href="contact.html" class="nav-cta">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-star"></i> Trusted Since 2006</span>
+                </div>
+                <h1 class="hero-title">
+                    Why <span class="highlight">Thousands Choose</span> Ozone Service Solutions
+                </h1>
+                <p class="hero-subtitle">
+                    18+ years of excellence, 10,000+ satisfied customers, and a commitment to making your service journey seamless and stress-free.
+                </p>
+                <div class="service-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-award"></i>
+                        <span>Proven Excellence</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-users"></i>
+                        <span>Customer-First</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Trust & Reliability</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I'd%20like%20to%20know%20more%20about%20why%20I%20should%20choose%20you" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Chat About Benefits
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98866 93316
+                    </a>
+                </div>
+            </div>
+            <!-- 3D Trust Badge Scene -->
+            <div class="service-scene-container">
+                <div class="scene-wrapper" id="trust-scene"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Differentiators -->
+    <section class="section key-differentiators">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Sets Us Apart</h2>
+                <p>Our unique advantages that make us Bengaluru's preferred service partner</p>
+            </div>
+            
+            <div class="differentiators-grid">
+                <div class="diff-card diff-main">
+                    <div class="diff-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>18+ Years Experience</h3>
+                    <p>Since 2006, we've mastered the complexities of government procedures, banking processes, and document requirements.</p>
+                    <div class="diff-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">18+</span>
+                            <span class="stat-label">Years Serving</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Service Types</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Our professionals have specific expertise in different service domains, ensuring you get specialized assistance.</p>
+                    <ul class="diff-list">
+                        <li><i class="fas fa-check"></i> Document Specialists</li>
+                        <li><i class="fas fa-check"></i> Financial Advisors</li>
+                        <li><i class="fas fa-check"></i> Travel Experts</li>
+                        <li><i class="fas fa-check"></i> Legal Consultants</li>
+                    </ul>
+                </div>
+                
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>End-to-End Service</h3>
+                    <p>From initial consultation to final delivery and after-service support, we handle everything for you.</p>
+                    <ul class="diff-list">
+                        <li><i class="fas fa-check"></i> Complete Process Management</li>
+                        <li><i class="fas fa-check"></i> Regular Status Updates</li>
+                        <li><i class="fas fa-check"></i> Problem Resolution</li>
+                        <li><i class="fas fa-check"></i> Post-Service Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="section our-values bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Core Values</h2>
+                <p>The principles that guide every service we deliver</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-number">01</div>
+                    <h3><i class="fas fa-heart"></i> Customer First</h3>
+                    <p>Your satisfaction is our priority. We listen, understand, and deliver solutions tailored to your specific needs.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-number">02</div>
+                    <h3><i class="fas fa-shield-alt"></i> Integrity</h3>
+                    <p>Transparent pricing, honest communication, and ethical practices in every interaction.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-number">03</div>
+                    <h3><i class="fas fa-bullseye"></i> Excellence</h3>
+                    <p>Commitment to quality service, attention to detail, and continuous improvement in our processes.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-number">04</div>
+                    <h3><i class="fas fa-clock"></i> Timeliness</h3>
+                    <p>Respect for your time with efficient processing and meeting committed deadlines.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-number">05</div>
+                    <h3><i class="fas fa-headset"></i> Support</h3>
+                    <p>Available when you need us - through phone, WhatsApp, or in-person consultations.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-number">06</div>
+                    <h3><i class="fas fa-hand-holding-heart"></i> Responsibility</h3>
+                    <p>We take ownership of your service requirements and see them through to completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Benefits You Experience</h2>
+                <p>Tangible advantages of choosing our services</p>
+            </div>
+            
+            <div class="benefits-tabs">
+                <div class="benefits-tab-buttons">
+                    <button class="benefits-tab-btn active" data-tab="time-benefits">Time Savings</button>
+                    <button class="benefits-tab-btn" data-tab="money-benefits">Cost Savings</button>
+                    <button class="benefits-tab-btn" data-tab="stress-benefits">Stress Reduction</button>
+                    <button class="benefits-tab-btn" data-tab="quality-benefits">Quality Assurance</button>
+                </div>
+                
+                <div class="benefits-tab-content active" id="time-benefits">
+                    <div class="benefits-content">
+                        <div class="benefits-visual">
+                            <div class="time-savings-chart">
+                                <div class="chart-bar">
+                                    <div class="bar-label">DIY Process</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill diy" style="width: 100%">
+                                            <span class="bar-text">10-20 Hours</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-label">With Our Service</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill our-service" style="width: 30%">
+                                            <span class="bar-text">2-4 Hours</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefits-text">
+                            <h3>Save 70-80% of Your Time</h3>
+                            <p>We handle research, documentation, travel, waiting, and follow-ups so you can focus on what matters most to you.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> No multiple office visits</li>
+                                <li><i class="fas fa-check"></i> No waiting in long queues</li>
+                                <li><i class="fas fa-check"></i> No learning complex procedures</li>
+                                <li><i class="fas fa-check"></i> No follow-up hassles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefits-tab-content" id="money-benefits">
+                    <div class="benefits-content">
+                        <div class="benefits-visual">
+                            <div class="cost-savings">
+                                <div class="savings-item">
+                                    <div class="savings-icon"><i class="fas fa-gas-pump"></i></div>
+                                    <div class="savings-text">
+                                        <h4>Travel Costs</h4>
+                                        <p>Save ₹500-2000 on fuel/parking</p>
+                                    </div>
+                                </div>
+                                <div class="savings-item">
+                                    <div class="savings-icon"><i class="fas fa-file-invoice"></i></div>
+                                    <div class="savings-text">
+                                        <h4>Error Penalties</h4>
+                                        <p>Avoid ₹1000-5000 in penalties</p>
+                                    </div>
+                                </div>
+                                <div class="savings-item">
+                                    <div class="savings-icon"><i class="fas fa-clock"></i></div>
+                                    <div class="savings-text">
+                                        <h4>Time Value</h4>
+                                        <p>Save 10-20 hours of your time</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefits-text">
+                            <h3>Smart Financial Choice</h3>
+                            <p>Our service fees are often less than the hidden costs of doing it yourself - travel, penalties, lost opportunities.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> No unexpected penalties</li>
+                                <li><i class="fas fa-check"></i> No re-application fees</li>
+                                <li><i class="fas fa-check"></i> Transparent pricing</li>
+                                <li><i class="fas fa-check"></i> Value for money</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefits-tab-content" id="stress-benefits">
+                    <div class="benefits-content">
+                        <div class="benefits-visual">
+                            <div class="stress-meter">
+                                <div class="meter-scale">
+                                    <div class="scale-point high">High Stress</div>
+                                    <div class="scale-point medium">Medium</div>
+                                    <div class="scale-point low">Low Stress</div>
+                                    <div class="meter-needle" style="transform: rotate(75deg);"></div>
+                                </div>
+                                <div class="meter-labels">
+                                    <div class="meter-label">
+                                        <span class="label-text">DIY</span>
+                                        <span class="label-value">85%</span>
+                                    </div>
+                                    <div class="meter-label">
+                                        <span class="label-text">With Us</span>
+                                        <span class="label-value">15%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefits-text">
+                            <h3>Peace of Mind Guaranteed</h3>
+                            <p>Let professionals handle the complexities while you enjoy peace of mind knowing everything is being taken care of properly.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Expert guidance at every step</li>
+                                <li><i class="fas fa-check"></i> Regular progress updates</li>
+                                <li><i class="fas fa-check"></i> Problem resolution support</li>
+                                <li><i class="fas fa-check"></i> Professional accountability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefits-tab-content" id="quality-benefits">
+                    <div class="benefits-content">
+                        <div class="benefits-visual">
+                            <div class="quality-metrics">
+                                <div class="metric">
+                                    <div class="metric-value">99%</div>
+                                    <div class="metric-label">Success Rate</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">95%</div>
+                                    <div class="metric-label">On-Time Delivery</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">98%</div>
+                                    <div class="metric-label">Client Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefits-text">
+                            <h3>Quality You Can Trust</h3>
+                            <p>Our systematic approach ensures accuracy, compliance, and timely completion of all services.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Error-free documentation</li>
+                                <li><i class="fas fa-check"></i> Compliance with regulations</li>
+                                <li><i class="fas fa-check"></i> Professional presentation</li>
+                                <li><i class="fas fa-check"></i> Quality assurance checks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="section testimonials-preview bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real feedback from satisfied customers</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Ozone Service Solutions handled my passport renewal in record time. Their team was professional and kept me updated throughout the process."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <span>Passport Service, March 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Their financial assistance for my home loan was exceptional. They got me the best interest rate and processed everything smoothly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <span>Home Loan, February 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a doctor, getting my medical licenses sorted was complex. Ozone made it simple and saved me weeks of paperwork."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Dr. Anand Patel</h4>
+                            <span>Medical License, January 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="testimonials.html" class="btn btn-primary">
+                    <i class="fas fa-comments"></i> Read More Testimonials
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Promise -->
+    <section class="section our-promise">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-handshake"></i> Our Promise to You</h2>
+                <p>Commitments we stand by for every client</p>
+            </div>
+            
+            <div class="promise-cards">
+                <div class="promise-card">
+                    <div class="promise-icon">
+                        <i class="fas fa-transparency"></i>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges. Clear quotes before we start, with detailed breakdowns.</p>
+                </div>
+                
+                <div class="promise-card">
+                    <div class="promise-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Timely Updates</h3>
+                    <p>Regular progress reports via your preferred communication channel.</p>
+                </div>
+                
+                <div class="promise-card">
+                    <div class="promise-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Confidentiality</h3>
+                    <p>Your documents and information are secure with us. We never share client data.</p>
+                </div>
+                
+                <div class="promise-card">
+                    <div class="promise-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>Single point of contact for all your queries and support needs.</p>
+                </div>
+            </div>
+            
+            <div class="commitment-box">
+                <h3><i class="fas fa-star"></i> Our Quality Commitment</h3>
+                <p>We don't just provide services; we deliver solutions with care, precision, and dedication. Every client receives the same high standard of service that has made us Bengaluru's trusted partner since 2006.</p>
+                <div class="commitment-signature">
+                    <strong>Ozone Service Solutions Team</strong>
+                    <span>Serving Bengaluru Since 2006</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section service-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Ready to Experience the Difference?</h2>
+                    <p>Join thousands of satisfied customers who trust us with their important service needs.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-98866 93316</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jayanagar 3rd Block, Bengaluru</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-action">
+                    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I'd%20like%20to%20experience%20your%20quality%20service%20for%3A" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Start Quality Service
+                    </a>
+                    <a href="tel:+919886693316" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Call for Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ozone Service Solutions</h3>
+                            <span>Since 2006</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Bengaluru's trusted service partner with 18+ years of excellence and customer-first approach.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919886693316" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919886693316" class="social-link phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mailto:ozoneservicesolutions@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="how-it-works.html"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="why-choose-us.html" class="active"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/document-assistance.html"><i class="fas fa-chevron-right"></i> Document Assistance</a></li>
+                        <li><a href="services/financial-assistance.html"><i class="fas fa-chevron-right"></i> Financial Assistance</a></li>
+                        <li><a href="services/travel-assistance.html"><i class="fas fa-chevron-right"></i> Travel Assistance</a></li>
+                        <li><a href="services/company-registration.html"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+                        <li><a href="services/recharge-utility.html"><i class="fas fa-chevron-right"></i> Recharge & Utility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 806, 8th Main Road<br>Jayanagar 3rd Block<br>Bengaluru 560011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-98866 93316</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ozoneservicesolutions@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9:30 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2006-<span id="currentYear">2023</span> Ozone Service Solutions. All Rights Reserved. | Serving Bengaluru Since 2006</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919886693316?text=Hi%20Ozone%20Service%20Solutions!%20I%20want%20to%20know%20why%20I%20should%20choose%20you" 
+       class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-text">Why Choose Us</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../script.js"></script>
+    <script src="../three-models.js"></script>
+    <script src="../assets/js/scroll-effects.js"></script>
+    <script src="../assets/js/counter-animation.js"></script>
+    
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Benefits tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Benefits tabs
+            const benefitsTabButtons = document.querySelectorAll('.benefits-tab-btn');
+            const benefitsTabContents = document.querySelectorAll('.benefits-tab-content');
+            
+            benefitsTabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons and contents
+                    benefitsTabButtons.forEach(btn => btn.classList.remove('active'));
+                    benefitsTabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Animate stats on scroll
+            const stats = document.querySelectorAll('.stat-number');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const stat = entry.target;
+                        const target = parseInt(stat.textContent);
+                        const suffix = stat.textContent.replace(/\d+/g, '');
+                        let current = 0;
+                        const increment = target / 50;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                stat.textContent = target + suffix;
+                                clearInterval(timer);
+                            } else {
+                                stat.textContent = Math.floor(current) + suffix;
+                            }
+                        }, 30);
+                        observer.unobserve(stat);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            stats.forEach(stat => {
+                observer.observe(stat);
+            });
+            
+            // Animate quality metrics
+            const metrics = document.querySelectorAll('.metric-value');
+            metrics.forEach(metric => {
+                const target = parseInt(metric.textContent);
+                let current = 0;
+                const increment = target / 30;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        metric.textContent = target + '%';
+                        clearInterval(timer);
+                    } else {
+                        metric.textContent = Math.floor(current) + '%';
+                    }
+                }, 50);
+            });
+        });
+    </script>
+</body>
+</html>
